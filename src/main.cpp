@@ -4,7 +4,7 @@
  */
 
 #include <QFileInfo>
-#include <QGuiApplication>
+//#include <GuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QIcon>
@@ -12,8 +12,8 @@
 #include <QTextStream>
 #include "imagewriter.h"
 #include "drivelistmodel.h"
-#include "networkaccessmanagerfactory.h"
-#include "cli.h"
+//#include "networkaccessmanagerfactory.h"
+//#include "cli.h"
 #include <QMessageLogContext>
 #include <QQuickWindow>
 #include <QTranslator>
@@ -46,15 +46,15 @@ static void consoleMsgHandler(QtMsgType, const QMessageLogContext &, const QStri
 
 int main(int argc, char *argv[])
 {
-    for (int i = 1; i < argc; i++)
-    {
-        if (strcmp(argv[i], "--cli") == 0)
-        {
-            /* CLI mode */
-            Cli cli(argc, argv);
-            return cli.main();
-        }
-    }
+//    for (int i = 1; i < argc; i++)
+//    {
+//        if (strcmp(argv[i], "--cli") == 0)
+//        {
+//            /* CLI mode */
+//            Cli cli(argc, argv);
+//            return cli.main();
+//        }
+//    }
 
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #ifdef Q_OS_WIN
@@ -85,125 +85,128 @@ int main(int argc, char *argv[])
 #else
     QApplication app(argc, argv);
 #endif
-    app.setOrganizationName("Raspberry Pi");
-    app.setOrganizationDomain("raspberrypi.org");
+    app.setOrganizationName("Raspberry Pi"); //TODO: ask what name we should put here
+    app.setOrganizationDomain("raspberrypi.org"); //TODO: ask what domain to use
     app.setApplicationName("Imager");
     app.setWindowIcon(QIcon(":/icons/rpi-imager.ico"));
     ImageWriter imageWriter;
-    NetworkAccessManagerFactory namf;
+//    NetworkAccessManagerFactory namf;
     QQmlApplicationEngine engine;
     QString customQm;
     QSettings settings;
 
+    QUrl url = QUrl::fromLocalFile("Aliro.img.xz");
+
     /* Parse commandline arguments (if any) */
-    QString customRepo;
-    QUrl url;
-    QStringList args = app.arguments();
-    for (int i=1; i < args.size(); i++)
-    {
-        if (!args[i].startsWith("-") && url.isEmpty())
-        {
-            if (args[i].startsWith("http:", Qt::CaseInsensitive) || args[i].startsWith("https:", Qt::CaseInsensitive))
-            {
-                url = args[i];
-            }
-            else
-            {
-                QFileInfo fi(args[i]);
+    // QString customRepo;
+    // QUrl url;
 
-                if (fi.isFile())
-                {
-                    url = QUrl::fromLocalFile(args[i]);
-                }
-                else
-                {
-                    cerr << "Argument ignored because it is not a regular file: " << args[i] << endl;;
-                }
-            }
-        }
-        else if (args[i] == "--repo")
-        {
-            if (args.size()-i < 2 || args[i+1].startsWith("-"))
-            {
-                cerr << "Missing URL after --repo" << endl;
-                return 1;
-            }
+    // QStringList args = app.arguments();
+    // for (int i=1; i < args.size(); i++)
+    // {
+    //     if (!args[i].startsWith("-") && url.isEmpty())
+    //     {
+    //         if (args[i].startsWith("http:", Qt::CaseInsensitive) || args[i].startsWith("https:", Qt::CaseInsensitive))
+    //         {
+    //             url = args[i];
+    //         }
+    //         else
+    //         {
+    //             QFileInfo fi(args[i]);
 
-            customRepo = args[++i];
-            if (customRepo.startsWith("http://") || customRepo.startsWith("https://"))
-            {
-                imageWriter.setCustomOsListUrl(customRepo);
-            }
-            else
-            {
-                QFileInfo fi(customRepo);
-                if (!fi.isFile())
-                {
-                    cerr << "Custom repository file does not exist or is not a regular file: " << customRepo << endl;
-                    return 1;
-                }
+    //             if (fi.isFile())
+    //             {
+    //                 url = QUrl::fromLocalFile(args[i]);
+    //             }
+    //             else
+    //             {
+    //                 cerr << "Argument ignored because it is not a regular file: " << args[i] << endl;;
+    //             }
+    //         }
+    //     }
+    //     else if (args[i] == "--repo")
+    //     {
+    //         if (args.size()-i < 2 || args[i+1].startsWith("-"))
+    //         {
+    //             cerr << "Missing URL after --repo" << endl;
+    //             return 1;
+    //         }
 
-                imageWriter.setCustomOsListUrl(QUrl::fromLocalFile(customRepo));
-            }
-        }
-        else if (args[i] == "--qm")
-        {
-            if (args.size()-i < 2 || args[i+1].startsWith("-"))
-            {
-                cerr << "Missing QM file after --qm" << endl;
-                return 1;
-            }
-            customQm = args[++i];
+    //         customRepo = args[++i];
+    //         if (customRepo.startsWith("http://") || customRepo.startsWith("https://"))
+    //         {
+    //             imageWriter.setCustomOsListUrl(customRepo);
+    //         }
+    //         else
+    //         {
+    //             QFileInfo fi(customRepo);
+    //             if (!fi.isFile())
+    //             {
+    //                 cerr << "Custom repository file does not exist or is not a regular file: " << customRepo << endl;
+    //                 return 1;
+    //             }
 
-            QFileInfo fi(customQm);
-            if (!fi.isFile())
-            {
-                cerr << "Custom QM file does not exist or is not a regular file: " << customQm << endl;
-                return 1;
-            }
-        }
-        else if (args[i] == "--debug")
-        {
-#ifdef Q_OS_WIN
-            /* Allocate console for debug messages on Windows */
-            if (::AttachConsole(ATTACH_PARENT_PROCESS) || ::AllocConsole())
-            {
-                freopen("CONOUT$", "w", stdout);
-                freopen("CONOUT$", "w", stderr);
-                std::ios::sync_with_stdio();
-                qInstallMessageHandler(consoleMsgHandler);
-            }
-#endif
-        }
-        else if (args[i] == "--help")
-        {
-            cerr << args[0] << " [--debug] [--version] [--repo <repository URL>] [--qm <custom qm translation file>] [--disable-telemetry] [<image file to write>]" << endl;
-            cerr << "-OR- " << args[0] << " --cli [--disable-verify] [--sha256 <expected hash>] [--debug] [--quiet] <image file to write> <destination drive device>" << endl;
-            return 0;
-        }
-        else if (args[i] == "--version")
-        {
-            cerr << args[0] << " version " << imageWriter.constantVersion() << endl;
-            cerr << "Repository: " << imageWriter.constantOsListUrl().toString() << endl;
-            return 0;
-        }
-        else if (args[i] == "--disable-telemetry")
-        {
-            cerr << "Disabled telemetry" << endl;
-            settings.setValue("telemetry", false);
-            settings.sync();
-        }
-        else if (args[i] == "--enable-telemetry")
-        {
-            cerr << "Using default telemetry setting" << endl;
-            settings.remove("telemetry");
-            settings.sync();
-        }
-        else
-        {
-            cerr << "Ignoring unknown argument: " << args[i] << endl;
-        }
-    }
+    //             imageWriter.setCustomOsListUrl(QUrl::fromLocalFile(customRepo));
+    //         }
+    //     }
+    //     else if (args[i] == "--qm")
+    //     {
+    //         if (args.size()-i < 2 || args[i+1].startsWith("-"))
+    //         {
+    //             cerr << "Missing QM file after --qm" << endl;
+    //             return 1;
+    //         }
+    //         customQm = args[++i];
+
+    //         QFileInfo fi(customQm);
+    //         if (!fi.isFile())
+    //         {
+    //             cerr << "Custom QM file does not exist or is not a regular file: " << customQm << endl;
+    //             return 1;
+    //         }
+    //     }
+    //     else if (args[i] == "--debug")
+    //     {
+    // #ifdef Q_OS_WIN
+    //         /* Allocate console for debug messages on Windows */
+    //         if (::AttachConsole(ATTACH_PARENT_PROCESS) || ::AllocConsole())
+    //         {
+    //             freopen("CONOUT$", "w", stdout);
+    //             freopen("CONOUT$", "w", stderr);
+    //             std::ios::sync_with_stdio();
+    //             qInstallMessageHandler(consoleMsgHandler);
+    //         }
+    // #endif
+    //     }
+    //     else if (args[i] == "--help")
+    //     {
+    //         cerr << args[0] << " [--debug] [--version] [--repo <repository URL>] [--qm <custom qm translation file>] [--disable-telemetry] [<image file to write>]" << endl;
+    //         cerr << "-OR- " << args[0] << " [--disable-verify] [--sha256 <expected hash>] [--debug] [--quiet] <image file to write> <destination drive device>" << endl;
+    //         return 0;
+    //     }
+    //     else if (args[i] == "--version")
+    //     {
+    //         cerr << args[0] << " version " << imageWriter.constantVersion() << endl;
+    //         cerr << "Repository: " << imageWriter.constantOsListUrl().toString() << endl;
+    //         return 0;
+    //     }
+    //     else if (args[i] == "--disable-telemetry")
+    //     {
+    //         cerr << "Disabled telemetry" << endl;
+    //         settings.setValue("telemetry", false);
+    //         settings.sync();
+    //     }
+    //     else if (args[i] == "--enable-telemetry")
+    //     {
+    //         cerr << "Using default telemetry setting" << endl;
+    //         settings.remove("telemetry");
+    //         settings.sync();
+    //     }
+    //     else
+    //     {
+    //         cerr << "Ignoring unknown argument: " << args[i] << endl;
+    //     }
+    // }
 
     QTranslator *translator = new QTranslator;
     if (customQm.isEmpty())
@@ -241,7 +244,7 @@ int main(int argc, char *argv[])
     if (!url.isEmpty())
         imageWriter.setSrc(url);
     imageWriter.setEngine(&engine);
-    engine.setNetworkAccessManagerFactory(&namf);
+//    engine.setNetworkAccessManagerFactory(&namf);
     engine.rootContext()->setContextProperty("imageWriter", &imageWriter);
     engine.rootContext()->setContextProperty("driveListModel", imageWriter.getDriveList());
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
@@ -250,15 +253,15 @@ int main(int argc, char *argv[])
         return -1;
 
     QObject *qmlwindow = engine.rootObjects().value(0);
-    qmlwindow->connect(&imageWriter, SIGNAL(downloadProgress(QVariant,QVariant)), qmlwindow, SLOT(onDownloadProgress(QVariant,QVariant)));
+//    qmlwindow->connect(&imageWriter, SIGNAL(downloadProgress(QVariant,QVariant)), qmlwindow, SLOT(onDownloadProgress(QVariant,QVariant)));
     qmlwindow->connect(&imageWriter, SIGNAL(verifyProgress(QVariant,QVariant)), qmlwindow, SLOT(onVerifyProgress(QVariant,QVariant)));
     qmlwindow->connect(&imageWriter, SIGNAL(preparationStatusUpdate(QVariant)), qmlwindow, SLOT(onPreparationStatusUpdate(QVariant)));
     qmlwindow->connect(&imageWriter, SIGNAL(error(QVariant)), qmlwindow, SLOT(onError(QVariant)));
     qmlwindow->connect(&imageWriter, SIGNAL(success()), qmlwindow, SLOT(onSuccess()));
-    qmlwindow->connect(&imageWriter, SIGNAL(fileSelected(QVariant)), qmlwindow, SLOT(onFileSelected(QVariant)));
+//    qmlwindow->connect(&imageWriter, SIGNAL(fileSelected(QVariant)), qmlwindow, SLOT(onFileSelected(QVariant)));
     qmlwindow->connect(&imageWriter, SIGNAL(cancelled()), qmlwindow, SLOT(onCancelled()));
     qmlwindow->connect(&imageWriter, SIGNAL(finalizing()), qmlwindow, SLOT(onFinalizing()));
-    qmlwindow->connect(&imageWriter, SIGNAL(networkOnline()), qmlwindow, SLOT(fetchOSlist()));
+//    qmlwindow->connect(&imageWriter, SIGNAL(networkOnline()), qmlwindow, SLOT(fetchOSlist()));
 
 #ifndef QT_NO_WIDGETS
     /* Set window position */

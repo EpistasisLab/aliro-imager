@@ -21,7 +21,7 @@ ApplicationWindow {
     minimumHeight: imageWriter.isEmbeddedMode() ? -1 : 420
     //maximumHeight: imageWriter.isEmbeddedMode() ? -1 : 420
 
-    title: qsTr("Raspberry Pi Imager v%1").arg(imageWriter.constantVersion())
+    title: qsTr("Aliro-Ed Imager v%1").arg(imageWriter.constantVersion())
 
     FontLoader {id: roboto;      source: "fonts/Roboto-Regular.ttf"}
     FontLoader {id: robotoLight; source: "fonts/Roboto-Light.ttf"}
@@ -44,13 +44,13 @@ ApplicationWindow {
         }
     }
 
-    Shortcut {
-        sequences: ["Shift+Ctrl+X", "Shift+Meta+X"]
-        context: Qt.ApplicationShortcut
-        onActivated: {
-            optionspopup.openPopup()
-        }
-    }
+//    Shortcut {
+//        sequences: ["Shift+Ctrl+X", "Shift+Meta+X"]
+//        context: Qt.ApplicationShortcut
+//        onActivated: {
+//            optionspopup.openPopup()
+//        }
+//    }
 
     ColumnLayout {
         id: bg
@@ -88,41 +88,42 @@ ApplicationWindow {
                 columns: 3
                 columnSpacing: 25
 
-                ColumnLayout {
-                    id: columnLayout
-                    spacing: 0
-                    Layout.fillWidth: true
+//                ColumnLayout {
+//                    id: columnLayout
+//                    spacing: 0
+//                    Layout.fillWidth: true
 
-                    Text {
-                        id: text1
-                        color: "#ffffff"
-                        text: qsTr("Operating System")
-                        Layout.fillWidth: true
-                        Layout.preferredHeight: 17
-                        Layout.preferredWidth: 100
-                        font.pixelSize: 12
-                        font.family: robotoBold.name
-                        font.bold: true
-                        horizontalAlignment: Text.AlignHCenter
-                    }
+//                    Text {
+//                        id: text1
+//                        color: "#ffffff"
+//                        text: qsTr("Operating System")
+//                        Layout.fillWidth: true
+//                        Layout.preferredHeight: 17
+//                        Layout.preferredWidth: 100
+//                        font.pixelSize: 12
+//                        font.family: robotoBold.name
+//                        font.bold: true
+//                        horizontalAlignment: Text.AlignHCenter
+//                    }
 
-                    ImButton {
-                        id: osbutton
-                        text: imageWriter.srcFileName() === "" ? qsTr("CHOOSE OS") : imageWriter.srcFileName()
-                        spacing: 0
-                        padding: 0
-                        bottomPadding: 0
-                        topPadding: 0
-                        Layout.minimumHeight: 40
-                        Layout.fillWidth: true
-                        onClicked: {
-                            ospopup.open()
-                            osswipeview.currentItem.forceActiveFocus()
-                        }
-                        Accessible.ignored: ospopup.visible || dstpopup.visible
-                        Accessible.description: qsTr("Select this button to change the operating system")
-                    }
-                }
+//                    ImButton {
+//                        id: osbutton
+//                        text: imageWriter.srcFileName() === "" ? qsTr("CHOOSE OS") : imageWriter.srcFileName()
+//                        spacing: 0
+//                        padding: 0
+//                        bottomPadding: 0
+//                        topPadding: 0
+//                        Layout.minimumHeight: 40
+//                        Layout.fillWidth: true
+//                        onClicked: {
+//                            // disable os popup here
+//                            ospopup.open()
+//                            osswipeview.currentItem.forceActiveFocus()
+//                        }
+//                        Accessible.ignored: ospopup.visible || dstpopup.visible
+//                        Accessible.description: qsTr("Select this button to change the operating system")
+//                    }
+//                }
 
                 ColumnLayout {
                     id: columnLayout2
@@ -345,319 +346,319 @@ ApplicationWindow {
         }
     }
 
-    /*
-      Popup for OS selection
-     */
-    Popup {
-        id: ospopup
-        x: 50
-        y: 25
-        width: parent.width-100
-        height: parent.height-50
-        padding: 0
-        closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
-        property string categorySelected : ""
+//    /*
+//      Popup for OS selection
+//     */
+//    Popup {
+//        id: ospopup
+//        x: 50
+//        y: 25
+//        width: parent.width-100
+//        height: parent.height-50
+//        padding: 0
+//        closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
+//        property string categorySelected : ""
 
-        // background of title
-        Rectangle {
-            color: "#f5f5f5"
-            anchors.right: parent.right
-            anchors.top: parent.top
-            height: 35
-            width: parent.width
-        }
-        // line under title
-        Rectangle {
-            color: "#afafaf"
-            width: parent.width
-            y: 35
-            implicitHeight: 1
-        }
+//        // background of title
+//        Rectangle {
+//            color: "#f5f5f5"
+//            anchors.right: parent.right
+//            anchors.top: parent.top
+//            height: 35
+//            width: parent.width
+//        }
+//        // line under title
+//        Rectangle {
+//            color: "#afafaf"
+//            width: parent.width
+//            y: 35
+//            implicitHeight: 1
+//        }
 
-        Text {
-            text: "X"
-            anchors.right: parent.right
-            anchors.top: parent.top
-            anchors.rightMargin: 25
-            anchors.topMargin: 10
-            font.family: roboto.name
-            font.bold: true
+//        Text {
+//            text: "X"
+//            anchors.right: parent.right
+//            anchors.top: parent.top
+//            anchors.rightMargin: 25
+//            anchors.topMargin: 10
+//            font.family: roboto.name
+//            font.bold: true
 
-            MouseArea {
-                anchors.fill: parent
-                cursorShape: Qt.PointingHandCursor
-                onClicked: {
-                    ospopup.close()
-                }
-            }
-        }
+//            MouseArea {
+//                anchors.fill: parent
+//                cursorShape: Qt.PointingHandCursor
+//                onClicked: {
+//                    ospopup.close()
+//                }
+//            }
+//        }
 
-        ColumnLayout {
-            spacing: 10
+//        ColumnLayout {
+//            spacing: 10
 
-            Text {
-                text: qsTr("Operating System")
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                Layout.fillWidth: true
-                Layout.topMargin: 10
-                font.family: roboto.name
-                font.bold: true
-            }
+//            Text {
+//                text: qsTr("Operating System")
+//                horizontalAlignment: Text.AlignHCenter
+//                verticalAlignment: Text.AlignVCenter
+//                Layout.fillWidth: true
+//                Layout.topMargin: 10
+//                font.family: roboto.name
+//                font.bold: true
+//            }
 
-            Item {
-                clip: true
-                Layout.preferredWidth: oslist.width
-                Layout.preferredHeight: oslist.height
+//            Item {
+//                clip: true
+//                Layout.preferredWidth: oslist.width
+//                Layout.preferredHeight: oslist.height
 
-                SwipeView {
-                    id: osswipeview
-                    interactive: false
+//                SwipeView {
+//                    id: osswipeview
+//                    interactive: false
 
-                    ListView {
-                        id: oslist
-                        model: osmodel
-                        currentIndex: -1
-                        delegate: osdelegate
-                        width: window.width-100
-                        height: window.height-100
-                        boundsBehavior: Flickable.StopAtBounds
-                        highlight: Rectangle { color: "lightsteelblue"; radius: 5 }
-                        ScrollBar.vertical: ScrollBar {
-                            width: 10
-                            policy: oslist.contentHeight > oslist.height ? ScrollBar.AlwaysOn : ScrollBar.AsNeeded
-                        }
-                        Keys.onSpacePressed: {
-                            if (currentIndex != -1)
-                                selectOSitem(model.get(currentIndex), true)
-                        }
-                        Accessible.onPressAction: {
-                            if (currentIndex != -1)
-                                selectOSitem(model.get(currentIndex), true)
-                        }
-                        Keys.onEnterPressed: Keys.onSpacePressed(event)
-                        Keys.onReturnPressed: Keys.onSpacePressed(event)
-                    }
-                }
-            }
-        }
-    }
+//                    ListView {
+//                        id: oslist
+//                        model: osmodel
+//                        currentIndex: -1
+//                        delegate: osdelegate
+//                        width: window.width-100
+//                        height: window.height-100
+//                        boundsBehavior: Flickable.StopAtBounds
+//                        highlight: Rectangle { color: "lightsteelblue"; radius: 5 }
+//                        ScrollBar.vertical: ScrollBar {
+//                            width: 10
+//                            policy: oslist.contentHeight > oslist.height ? ScrollBar.AlwaysOn : ScrollBar.AsNeeded
+//                        }
+//                        Keys.onSpacePressed: {
+//                            if (currentIndex != -1)
+//                                selectOSitem(model.get(currentIndex), true)
+//                        }
+//                        Accessible.onPressAction: {
+//                            if (currentIndex != -1)
+//                                selectOSitem(model.get(currentIndex), true)
+//                        }
+//                        Keys.onEnterPressed: Keys.onSpacePressed(event)
+//                        Keys.onReturnPressed: Keys.onSpacePressed(event)
+//                    }
+//                }
+//            }
+//        }
+//    }
 
-    Component {
-        id: suboslist
+//    Component {
+//        id: suboslist
 
-        ListView {
-            model: ListModel {
-                ListElement {
-                    url: ""
-                    icon: "icons/ic_chevron_left_40px.svg"
-                    extract_size: 0
-                    image_download_size: 0
-                    extract_sha256: ""
-                    contains_multiple_files: false
-                    release_date: ""
-                    subitems_url: "internal://back"
-                    subitems_json: ""
-                    name: qsTr("Back")
-                    description: qsTr("Go back to main menu")
-                    tooltip: ""
-                    website: ""
-                    init_format: ""
-                }
-            }
+//        ListView {
+//            model: ListModel {
+//                ListElement {
+//                    url: ""
+//                    icon: "icons/ic_chevron_left_40px.svg"
+//                    extract_size: 0
+//                    image_download_size: 0
+//                    extract_sha256: ""
+//                    contains_multiple_files: false
+//                    release_date: ""
+//                    subitems_url: "internal://back"
+//                    subitems_json: ""
+//                    name: qsTr("Back")
+//                    description: qsTr("Go back to main menu")
+//                    tooltip: ""
+//                    website: ""
+//                    init_format: ""
+//                }
+//            }
 
-            currentIndex: -1
-            delegate: osdelegate
-            width: window.width-100
-            height: window.height-100
-            boundsBehavior: Flickable.StopAtBounds
-            highlight: Rectangle { color: "lightsteelblue"; radius: 5 }
-            ScrollBar.vertical: ScrollBar {
-                width: 10
-                policy: parent.contentHeight > parent.height ? ScrollBar.AlwaysOn : ScrollBar.AsNeeded
-            }
-            Keys.onSpacePressed: {
-                if (currentIndex != -1)
-                    selectOSitem(model.get(currentIndex))
-            }
-            Accessible.onPressAction: {
-                if (currentIndex != -1)
-                    selectOSitem(model.get(currentIndex))
-            }
-            Keys.onEnterPressed: Keys.onSpacePressed(event)
-            Keys.onReturnPressed: Keys.onSpacePressed(event)
-        }
-    }
+//            currentIndex: -1
+//            delegate: osdelegate
+//            width: window.width-100
+//            height: window.height-100
+//            boundsBehavior: Flickable.StopAtBounds
+//            highlight: Rectangle { color: "lightsteelblue"; radius: 5 }
+//            ScrollBar.vertical: ScrollBar {
+//                width: 10
+//                policy: parent.contentHeight > parent.height ? ScrollBar.AlwaysOn : ScrollBar.AsNeeded
+//            }
+//            Keys.onSpacePressed: {
+//                if (currentIndex != -1)
+//                    selectOSitem(model.get(currentIndex))
+//            }
+//            Accessible.onPressAction: {
+//                if (currentIndex != -1)
+//                    selectOSitem(model.get(currentIndex))
+//            }
+//            Keys.onEnterPressed: Keys.onSpacePressed(event)
+//            Keys.onReturnPressed: Keys.onSpacePressed(event)
+//        }
+//    }
 
-    ListModel {
-        id: osmodel
+//    ListModel {
+//        id: osmodel
 
-        ListElement {
-            url: "internal://format"
-            icon: "icons/erase.png"
-            extract_size: 0
-            image_download_size: 0
-            extract_sha256: ""
-            contains_multiple_files: false
-            release_date: ""
-            subitems_url: ""
-            subitems_json: ""
-            name: qsTr("Erase")
-            description: qsTr("Format card as FAT32")
-            tooltip: ""
-            website: ""
-            init_format: ""
-        }
+//        ListElement {
+//            url: "internal://format"
+//            icon: "icons/erase.png"
+//            extract_size: 0
+//            image_download_size: 0
+//            extract_sha256: ""
+//            contains_multiple_files: false
+//            release_date: ""
+//            subitems_url: ""
+//            subitems_json: ""
+//            name: qsTr("Erase")
+//            description: qsTr("Format card as FAT32")
+//            tooltip: ""
+//            website: ""
+//            init_format: ""
+//        }
 
-        ListElement {
-            url: ""
-            icon: "icons/use_custom.png"
-            name: qsTr("Use custom")
-            description: qsTr("Select a custom .img from your computer")
-        }
+//        ListElement {
+//            url: ""
+//            icon: "icons/use_custom.png"
+//            name: qsTr("Use custom")
+//            description: qsTr("Select a custom .img from your computer")
+//        }
 
-        Component.onCompleted: {
-            if (imageWriter.isOnline()) {
-                fetchOSlist();
-            }
-        }
-    }
+//        Component.onCompleted: {
+//            if (imageWriter.isOnline()) {
+//                fetchOSlist();
+//            }
+//        }
+//    }
 
-    Component {
-        id: osdelegate
+//    Component {
+//        id: osdelegate
 
-        Item {
-            width: window.width-100
-            height: contentLayout.implicitHeight + 24
-            Accessible.name: name+".\n"+description
+//        Item {
+//            width: window.width-100
+//            height: contentLayout.implicitHeight + 24
+//            Accessible.name: name+".\n"+description
 
-            MouseArea {
-                id: osMouseArea
-                anchors.fill: parent
-                cursorShape: Qt.PointingHandCursor
-                hoverEnabled: true
+//            MouseArea {
+//                id: osMouseArea
+//                anchors.fill: parent
+//                cursorShape: Qt.PointingHandCursor
+//                hoverEnabled: true
 
-                onEntered: {
-                    bgrect.mouseOver = true
-                }
+//                onEntered: {
+//                    bgrect.mouseOver = true
+//                }
 
-                onExited: {
-                    bgrect.mouseOver = false
-                }
+//                onExited: {
+//                    bgrect.mouseOver = false
+//                }
 
-                onClicked: {
-                    selectOSitem(model)
-                }
-            }
+//                onClicked: {
+//                    selectOSitem(model)
+//                }
+//            }
 
-            Rectangle {
-               id: bgrect
-               anchors.fill: parent
-               color: "#f5f5f5"
-               visible: mouseOver && parent.ListView.view.currentIndex !== index
-               property bool mouseOver: false
-            }
-            Rectangle {
-               id: borderrect
-               implicitHeight: 1
-               implicitWidth: parent.width
-               color: "#dcdcdc"
-               y: parent.height
-            }
+//            Rectangle {
+//               id: bgrect
+//               anchors.fill: parent
+//               color: "#f5f5f5"
+//               visible: mouseOver && parent.ListView.view.currentIndex !== index
+//               property bool mouseOver: false
+//            }
+//            Rectangle {
+//               id: borderrect
+//               implicitHeight: 1
+//               implicitWidth: parent.width
+//               color: "#dcdcdc"
+//               y: parent.height
+//            }
 
-            RowLayout {
-                id: contentLayout
-                anchors {
-                    left: parent.left
-                    top: parent.top
-                    right: parent.right
-                    margins: 12
-                }
-                spacing: 12
+//            RowLayout {
+//                id: contentLayout
+//                anchors {
+//                    left: parent.left
+//                    top: parent.top
+//                    right: parent.right
+//                    margins: 12
+//                }
+//                spacing: 12
 
-                Image {
-                    source: icon == "icons/ic_build_48px.svg" ? "icons/cat_misc_utility_images.png": icon
-                    Layout.preferredHeight: 40
-                    Layout.preferredWidth: 40
-                    sourceSize.width: 40
-                    sourceSize.height: 40
-                    fillMode: Image.PreserveAspectFit
-                    verticalAlignment: Image.AlignVCenter
-                    Layout.alignment: Qt.AlignVCenter
-                }
-                ColumnLayout {
-                    Layout.fillWidth: true
+//                Image {
+//                    source: icon == "icons/ic_build_48px.svg" ? "icons/cat_misc_utility_images.png": icon
+//                    Layout.preferredHeight: 40
+//                    Layout.preferredWidth: 40
+//                    sourceSize.width: 40
+//                    sourceSize.height: 40
+//                    fillMode: Image.PreserveAspectFit
+//                    verticalAlignment: Image.AlignVCenter
+//                    Layout.alignment: Qt.AlignVCenter
+//                }
+//                ColumnLayout {
+//                    Layout.fillWidth: true
 
-                    RowLayout {
-                        spacing: 12
-                        Text {
-                            text: name
-                            elide: Text.ElideRight
-                            font.family: roboto.name
-                            font.bold: true
-                        }
-                        Image {
-                            source: "icons/ic_info_16px.png"
-                            Layout.preferredHeight: 16
-                            Layout.preferredWidth: 16
-                            visible: typeof(website) == "string" && website
-                            MouseArea {
-                                anchors.fill: parent
-                                onClicked: Qt.openUrlExternally(website)
-                            }
-                        }
-                        Item {
-                            Layout.fillWidth: true
-                        }
-                    }
+//                    RowLayout {
+//                        spacing: 12
+//                        Text {
+//                            text: name
+//                            elide: Text.ElideRight
+//                            font.family: roboto.name
+//                            font.bold: true
+//                        }
+//                        Image {
+//                            source: "icons/ic_info_16px.png"
+//                            Layout.preferredHeight: 16
+//                            Layout.preferredWidth: 16
+//                            visible: typeof(website) == "string" && website
+//                            MouseArea {
+//                                anchors.fill: parent
+//                                onClicked: Qt.openUrlExternally(website)
+//                            }
+//                        }
+//                        Item {
+//                            Layout.fillWidth: true
+//                        }
+//                    }
 
-                    Text {
-                        Layout.fillWidth: true
-                        font.family: roboto.name
-                        text: description
-                        wrapMode: Text.WordWrap
-                        color: "#1a1a1a"
-                    }
+//                    Text {
+//                        Layout.fillWidth: true
+//                        font.family: roboto.name
+//                        text: description
+//                        wrapMode: Text.WordWrap
+//                        color: "#1a1a1a"
+//                    }
 
-                    Text {
-                        Layout.fillWidth: true
-                        elide: Text.ElideRight
-                        color: "#646464"
-                        font.weight: Font.Light
-                        visible: typeof(release_date) == "string" && release_date
-                        text: qsTr("Released: %1").arg(release_date)
-                    }
-                    Text {
-                        Layout.fillWidth: true
-                        elide: Text.ElideRight
-                        color: "#646464"
-                        font.weight: Font.Light
-                        visible: typeof(url) == "string" && url != "" && url != "internal://format"
-                        text: !url ? "" :
-                              typeof(extract_sha256) != "undefined" && imageWriter.isCached(url,extract_sha256)
-                                ? qsTr("Cached on your computer")
-                                : url.startsWith("file://")
-                                  ? qsTr("Local file")
-                                  : qsTr("Online - %1 GB download").arg((image_download_size/1073741824).toFixed(1))
-                    }
+//                    Text {
+//                        Layout.fillWidth: true
+//                        elide: Text.ElideRight
+//                        color: "#646464"
+//                        font.weight: Font.Light
+//                        visible: typeof(release_date) == "string" && release_date
+//                        text: qsTr("Released: %1").arg(release_date)
+//                    }
+//                    Text {
+//                        Layout.fillWidth: true
+//                        elide: Text.ElideRight
+//                        color: "#646464"
+//                        font.weight: Font.Light
+//                        visible: typeof(url) == "string" && url != "" && url != "internal://format"
+//                        text: !url ? "" :
+//                              typeof(extract_sha256) != "undefined" && imageWriter.isCached(url,extract_sha256)
+//                                ? qsTr("Cached on your computer")
+//                                : url.startsWith("file://")
+//                                  ? qsTr("Local file")
+//                                  : qsTr("Online - %1 GB download").arg((image_download_size/1073741824).toFixed(1))
+//                    }
 
-                    ToolTip {
-                        visible: osMouseArea.containsMouse && typeof(tooltip) == "string" && tooltip != ""
-                        delay: 1000
-                        text: typeof(tooltip) == "string" ? tooltip : ""
-                        clip: false
-                    }
-                }
-                Image {
-                    source: "icons/ic_chevron_right_40px.svg"
-                    visible: (typeof(subitems_json) == "string" && subitems_json != "") || (typeof(subitems_url) == "string" && subitems_url != "" && subitems_url != "internal://back")
-                    Layout.preferredHeight: 40
-                    Layout.preferredWidth: 40
-                    fillMode: Image.PreserveAspectFit
-                }
-            }
-        }
-    }
+//                    ToolTip {
+//                        visible: osMouseArea.containsMouse && typeof(tooltip) == "string" && tooltip != ""
+//                        delay: 1000
+//                        text: typeof(tooltip) == "string" ? tooltip : ""
+//                        clip: false
+//                    }
+//                }
+//                Image {
+//                    source: "icons/ic_chevron_right_40px.svg"
+//                    visible: (typeof(subitems_json) == "string" && subitems_json != "") || (typeof(subitems_url) == "string" && subitems_url != "" && subitems_url != "internal://back")
+//                    Layout.preferredHeight: 40
+//                    Layout.preferredWidth: 40
+//                    fillMode: Image.PreserveAspectFit
+//                }
+//            }
+//        }
+//    }
 
     /*
       Popup for storage device selection
@@ -930,28 +931,28 @@ ApplicationWindow {
         }
     }
 
-    /* Utility functions */
-    function httpRequest(url, callback) {
-        var xhr = new XMLHttpRequest();
-        xhr.timeout = 5000
-        xhr.onreadystatechange = (function(x) {
-            return function() {
-                if (x.readyState === x.DONE)
-                {
-                    if (x.status === 200)
-                    {
-                        callback(x)
-                    }
-                    else
-                    {
-                        onError(qsTr("Error downloading OS list from Internet"))
-                    }
-                }
-            }
-        })(xhr)
-        xhr.open("GET", url)
-        xhr.send()
-    }
+//    /* Utility functions */
+//    function httpRequest(url, callback) {
+//        var xhr = new XMLHttpRequest();
+//        xhr.timeout = 5000
+//        xhr.onreadystatechange = (function(x) {
+//            return function() {
+//                if (x.readyState === x.DONE)
+//                {
+//                    if (x.status === 200)
+//                    {
+//                        callback(x)
+//                    }
+//                    else
+//                    {
+//                        onError(qsTr("Error downloading OS list from Internet"))
+//                    }
+//                }
+//            }
+//        })(xhr)
+//        xhr.open("GET", url)
+//        xhr.send()
+//    }
 
     /* Slots for signals imagewrite emits */
     function onDownloadProgress(now,total) {
@@ -1080,91 +1081,91 @@ ApplicationWindow {
         }
     }
 
-    function oslistFromJson(o) {
-        var oslist = false
-        var lang_country = Qt.locale().name
-        if ("os_list_"+lang_country in o) {
-            oslist = o["os_list_"+lang_country]
-        }
-        else if (lang_country.includes("_")) {
-            var lang = lang_country.substr(0, lang_country.indexOf("_"))
-            if ("os_list_"+lang in o) {
-                oslist = o["os_list_"+lang]
-            }
-        }
+//    function oslistFromJson(o) {
+//        var oslist = false
+//        var lang_country = Qt.locale().name
+//        if ("os_list_"+lang_country in o) {
+//            oslist = o["os_list_"+lang_country]
+//        }
+//        else if (lang_country.includes("_")) {
+//            var lang = lang_country.substr(0, lang_country.indexOf("_"))
+//            if ("os_list_"+lang in o) {
+//                oslist = o["os_list_"+lang]
+//            }
+//        }
 
-        if (!oslist) {
-            if (!"os_list" in o) {
-                onError(qsTr("Error parsing os_list.json"))
-                return false
-            }
+//        if (!oslist) {
+//            if (!"os_list" in o) {
+//                onError(qsTr("Error parsing os_list.json"))
+//                return false
+//            }
 
-            oslist = o["os_list"]
-        }
+//            oslist = o["os_list"]
+//        }
 
-        checkForRandom(oslist)
+//        checkForRandom(oslist)
 
-        /* Flatten subitems to subitems_json */
-        for (var i in oslist) {
-            var entry = oslist[i];
-            if ("subitems" in entry) {
-                entry["subitems_json"] = JSON.stringify(entry["subitems"])
-                delete entry["subitems"]
-            }
-        }
+//        /* Flatten subitems to subitems_json */
+//        for (var i in oslist) {
+//            var entry = oslist[i];
+//            if ("subitems" in entry) {
+//                entry["subitems_json"] = JSON.stringify(entry["subitems"])
+//                delete entry["subitems"]
+//            }
+//        }
 
-        return oslist
-    }
+//        return oslist
+//    }
 
-    function selectNamedOS(name, collection)
-    {
-        for (var i = 0; i < collection.count; i++) {
-            var os = collection.get(i)
+//    function selectNamedOS(name, collection)
+//    {
+//        for (var i = 0; i < collection.count; i++) {
+//            var os = collection.get(i)
 
-            if (typeof(os.subitems_json) == "string" && os.subitems_json != "") {
-                selectNamedOS(name, os.subitems_json)
-            }
-            else if (typeof(os.url) !== "undefined" && name === os.name) {
-                selectOSitem(os, false)
-                break
-            }
-        }
-    }
+//            if (typeof(os.subitems_json) == "string" && os.subitems_json != "") {
+//                selectNamedOS(name, os.subitems_json)
+//            }
+//            else if (typeof(os.url) !== "undefined" && name === os.name) {
+//                selectOSitem(os, false)
+//                break
+//            }
+//        }
+//    }
 
-    function fetchOSlist() {
-        httpRequest(imageWriter.constantOsListUrl(), function (x) {
-            var o = JSON.parse(x.responseText)
-            var oslist = oslistFromJson(o)
-            if (oslist === false)
-                return
-            for (var i in oslist) {
-                osmodel.insert(osmodel.count-2, oslist[i])
-            }
+//    function fetchOSlist() {
+//        httpRequest(imageWriter.constantOsListUrl(), function (x) {
+//            var o = JSON.parse(x.responseText)
+//            var oslist = oslistFromJson(o)
+//            if (oslist === false)
+//                return
+//            for (var i in oslist) {
+//                osmodel.insert(osmodel.count-2, oslist[i])
+//            }
 
-            if ("imager" in o) {
-                var imager = o["imager"]
-                if (imageWriter.getBoolSetting("check_version") && "latest_version" in imager && "url" in imager) {
-                    if (!imageWriter.isEmbeddedMode() && imageWriter.isVersionNewer(imager["latest_version"])) {
-                        updatepopup.url = imager["url"]
-                        updatepopup.openPopup()
-                    }
-                }
-                if ("default_os" in imager) {
-                    selectNamedOS(imager["default_os"], osmodel)
-                }
-                if (imageWriter.isEmbeddedMode()) {
-                    if ("embedded_default_os" in imager) {
-                        selectNamedOS(imager["embedded_default_os"], osmodel)
-                    }
-                    if ("embedded_default_destination" in imager) {
-                        imageWriter.startDriveListPolling()
-                        setDefaultDest.drive = imager["embedded_default_destination"]
-                        setDefaultDest.start()
-                    }
-                }
-            }
-        })
-    }
+//            if ("imager" in o) {
+//                var imager = o["imager"]
+//                if (imageWriter.getBoolSetting("check_version") && "latest_version" in imager && "url" in imager) {
+//                    if (!imageWriter.isEmbeddedMode() && imageWriter.isVersionNewer(imager["latest_version"])) {
+//                        updatepopup.url = imager["url"]
+//                        updatepopup.openPopup()
+//                    }
+//                }
+//                if ("default_os" in imager) {
+//                    selectNamedOS(imager["default_os"], osmodel)
+//                }
+//                if (imageWriter.isEmbeddedMode()) {
+//                    if ("embedded_default_os" in imager) {
+//                        selectNamedOS(imager["embedded_default_os"], osmodel)
+//                    }
+//                    if ("embedded_default_destination" in imager) {
+//                        imageWriter.startDriveListPolling()
+//                        setDefaultDest.drive = imager["embedded_default_destination"]
+//                        setDefaultDest.start()
+//                    }
+//                }
+//            }
+//        })
+//    }
 
     Timer {
         /* Verify if default drive is in our list after 100 ms */
