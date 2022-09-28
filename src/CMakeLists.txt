@@ -142,9 +142,9 @@ if (WIN32)
     find_package(OpenSSL REQUIRED)
 
     # Bundled zlib
-    add_subdirectory(dependencies/zlib-1.2.11)
-    set(ZLIB_LIBRARY zlibstatic)
-    set(ZLIB_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/dependencies/zlib-1.2.11)
+#    add_subdirectory(dependencies/zlib-1.2.11)
+#    set(ZLIB_LIBRARY zlibstatic)
+#    set(ZLIB_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/dependencies/zlib-1.2.11)
 
     # Bundled libcurl
     set(CMAKE_CURL_INCLUDES)
@@ -161,11 +161,11 @@ if (WIN32)
     set(LIBLZMA_LIBRARY cmliblzma)
 
     # Bundled zstd
-    set(ZSTD_BUILD_PROGRAMS OFF)
-    set(ZSTD_BUILD_SHARED OFF)
-    add_subdirectory(dependencies/zstd-1.5.0/build/cmake)
-    set(ZSTD_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/dependencies/zstd-1.5.0/lib)
-    set(ZSTD_LIBRARY libzstd_static)
+#    set(ZSTD_BUILD_PROGRAMS OFF)
+#    set(ZSTD_BUILD_SHARED OFF)
+#    add_subdirectory(dependencies/zstd-1.5.0/build/cmake)
+#    set(ZSTD_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/dependencies/zstd-1.5.0/lib)
+#    set(ZSTD_LIBRARY libzstd_static)
 
     # Bundled libarchive
     set(ENABLE_TEST OFF CACHE BOOL "")
