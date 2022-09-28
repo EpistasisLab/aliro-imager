@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
 #else
     QApplication app(argc, argv);
 #endif
-    app.setOrganizationName("Raspberry Pi"); //TODO: ask what name we should put here
+    app.setOrganizationName("Aliro-Ed"); //TODO: ask what name we should put here
     app.setOrganizationDomain("raspberrypi.org"); //TODO: ask what domain to use
     app.setApplicationName("Imager");
     app.setWindowIcon(QIcon(":/icons/rpi-imager.ico"));

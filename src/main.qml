@@ -85,45 +85,45 @@ ApplicationWindow {
                 anchors.leftMargin: 50
 
                 rows: 6
-                columns: 2
+                columns: 3
                 columnSpacing: 25
 
-//                ColumnLayout {
-//                    id: columnLayout
-//                    spacing: 0
-//                    Layout.fillWidth: true
+                ColumnLayout {
+                    id: columnLayout
+                    spacing: 0
+                    Layout.fillWidth: true
 
-//                    Text {
-//                        id: text1
-//                        color: "#ffffff"
-//                        text: qsTr("Operating System")
-//                        Layout.fillWidth: true
-//                        Layout.preferredHeight: 17
-//                        Layout.preferredWidth: 100
-//                        font.pixelSize: 12
-//                        font.family: robotoBold.name
-//                        font.bold: true
-//                        horizontalAlignment: Text.AlignHCenter
-//                    }
+                    Text {
+                        id: text1
+                        color: "#ffffff"
+                        text: qsTr("Operating System")
+                        Layout.fillWidth: true
+                        Layout.preferredHeight: 17
+                        Layout.preferredWidth: 100
+                        font.pixelSize: 12
+                        font.family: robotoBold.name
+                        font.bold: true
+                        horizontalAlignment: Text.AlignHCenter
+                    }
 
-//                    ImButton {
-//                        id: osbutton
-//                        text: imageWriter.srcFileName() === "" ? qsTr("CHOOSE OS") : imageWriter.srcFileName()
-//                        spacing: 0
-//                        padding: 0
-//                        bottomPadding: 0
-//                        topPadding: 0
-//                        Layout.minimumHeight: 40
-//                        Layout.fillWidth: true
-//                        onClicked: {
-//                            // disable os popup here
-//                            ospopup.open()
-//                            osswipeview.currentItem.forceActiveFocus()
-//                        }
-//                        Accessible.ignored: ospopup.visible || dstpopup.visible
-//                        Accessible.description: qsTr("Select this button to change the operating system")
-//                    }
-//                }
+                    ImButton {
+                        id: osbutton
+                        text: imageWriter.srcFileName() === "" ? qsTr("CHOOSE OS") : imageWriter.srcFileName()
+                        spacing: 0
+                        padding: 0
+                        bottomPadding: 0
+                        topPadding: 0
+                        Layout.minimumHeight: 40
+                        Layout.fillWidth: true
+                        onClicked: {
+                            // disable os popup here
+                            ospopup.open()
+                            osswipeview.currentItem.forceActiveFocus()
+                        }
+                        Accessible.ignored: ospopup.visible || dstpopup.visible
+                        Accessible.description: qsTr("Select this button to change the operating system")
+                    }
+                }
 
                 ColumnLayout {
                     id: columnLayout2
