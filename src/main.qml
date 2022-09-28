@@ -85,7 +85,7 @@ ApplicationWindow {
                 anchors.leftMargin: 50
 
                 rows: 6
-                columns: 3
+                columns: 2
                 columnSpacing: 25
 
 //                ColumnLayout {
