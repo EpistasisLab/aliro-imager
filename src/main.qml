@@ -85,45 +85,46 @@ ApplicationWindow {
                 anchors.leftMargin: 50
 
                 rows: 6
-                columns: 3
+//                columns: 3
+                columns: 2
                 columnSpacing: 25
 
-                ColumnLayout {
-                    id: columnLayout
-                    spacing: 0
-                    Layout.fillWidth: true
+//                ColumnLayout {
+//                    id: columnLayout
+//                    spacing: 0
+//                    Layout.fillWidth: true
 
-                    Text {
-                        id: text1
-                        color: "#ffffff"
-                        text: qsTr("Operating System")
-                        Layout.fillWidth: true
-                        Layout.preferredHeight: 17
-                        Layout.preferredWidth: 100
-                        font.pixelSize: 12
-                        font.family: robotoBold.name
-                        font.bold: true
-                        horizontalAlignment: Text.AlignHCenter
-                    }
+//                    Text {
+//                        id: text1
+//                        color: "#ffffff"
+//                        text: qsTr("Operating System")
+//                        Layout.fillWidth: true
+//                        Layout.preferredHeight: 17
+//                        Layout.preferredWidth: 100
+//                        font.pixelSize: 12
+//                        font.family: robotoBold.name
+//                        font.bold: true
+//                        horizontalAlignment: Text.AlignHCenter
+//                    }
 
-                    ImButton {
-                        id: osbutton
-                        text: imageWriter.srcFileName() === "" ? qsTr("CHOOSE OS") : imageWriter.srcFileName()
-                        spacing: 0
-                        padding: 0
-                        bottomPadding: 0
-                        topPadding: 0
-                        Layout.minimumHeight: 40
-                        Layout.fillWidth: true
-                        onClicked: {
-                            // disable os popup here
-                            ospopup.open()
-                            osswipeview.currentItem.forceActiveFocus()
-                        }
-                        Accessible.ignored: ospopup.visible || dstpopup.visible
-                        Accessible.description: qsTr("Select this button to change the operating system")
-                    }
-                }
+//                    ImButton {
+//                        id: osbutton
+//                        text: imageWriter.srcFileName() === "" ? qsTr("CHOOSE OS") : imageWriter.srcFileName()
+//                        spacing: 0
+//                        padding: 0
+//                        bottomPadding: 0
+//                        topPadding: 0
+//                        Layout.minimumHeight: 40
+//                        Layout.fillWidth: true
+//                        onClicked: {
+//                            // disable os popup here
+//                            ospopup.open()
+//                            osswipeview.currentItem.forceActiveFocus()
+//                        }
+//                        Accessible.ignored: ospopup.visible || dstpopup.visible
+//                        Accessible.description: qsTr("Select this button to change the operating system")
+//                    }
+//                }
 
                 ColumnLayout {
                     id: columnLayout2
@@ -193,7 +194,8 @@ ApplicationWindow {
 
                 ColumnLayout {
                     id: columnLayout3
-                    Layout.columnSpan: 3
+//                    Layout.columnSpan: 3
+                    Layout.columnSpan: 2
                     Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
 
                     Text {
@@ -254,7 +256,8 @@ ApplicationWindow {
                 }
 
                 Text {
-                    Layout.columnSpan: 3
+//                    Layout.columnSpan: 3
+                    Layout.columnSpan: 2
                     color: "#ffffff"
                     font.pixelSize: 18
                     font.family: roboto.name
@@ -263,7 +266,8 @@ ApplicationWindow {
                 }
 
                 Text {
-                    Layout.columnSpan: 3
+//                    Layout.columnSpan: 3
+                    Layout.columnSpan: 2
                     color: "#ffffff"
                     font.pixelSize: 18
                     font.family: roboto.name
@@ -273,7 +277,8 @@ ApplicationWindow {
 
                 RowLayout {
                     id: langbar
-                    Layout.columnSpan: 3
+//                    Layout.columnSpan: 3
+                    Layout.columnSpan: 2
                     Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
                     Layout.bottomMargin: 5
                     spacing: 10
@@ -1002,7 +1007,8 @@ ApplicationWindow {
     function resetWriteButton() {
         progressText.visible = false
         progressBar.visible = false
-        customizebutton.visible = imageWriter.imageSupportsCustomization()
+//        customizebutton.visible = imageWriter.imageSupportsCustomization()
+        customizebutton.visible = false
         osbutton.enabled = true
         dstbutton.enabled = true
         writebutton.visible = true
@@ -1047,7 +1053,8 @@ ApplicationWindow {
         if (imageWriter.readyToWrite()) {
             writebutton.enabled = true
         }
-        customizebutton.visible = imageWriter.imageSupportsCustomization()
+//        customizebutton.visible = imageWriter.imageSupportsCustomization()
+        customizebutton.visible = false
     }
 
     function onCancelled() {
@@ -1279,7 +1286,8 @@ ApplicationWindow {
             if (imageWriter.readyToWrite()) {
                 writebutton.enabled = true
             }
-            customizebutton.visible = imageWriter.imageSupportsCustomization()
+//            customizebutton.visible = imageWriter.imageSupportsCustomization()
+            customizebutton.visible = false
         }
     }
 
