@@ -14,11 +14,13 @@ ApplicationWindow {
     id: window
     visible: true
 
-    width: imageWriter.isEmbeddedMode() ? -1 : 680
+//    width: imageWriter.isEmbeddedMode() ? -1 : 680
+    width: imageWriter.isEmbeddedMode() ? -1 : 540
     height: imageWriter.isEmbeddedMode() ? -1 : 420
-    minimumWidth: imageWriter.isEmbeddedMode() ? -1 : 680
+//    minimumWidth: imageWriter.isEmbeddedMode() ? -1 : 680
+    minimumWidth: imageWriter.isEmbeddedMode() ? -1 : 540
     //maximumWidth: imageWriter.isEmbeddedMode() ? -1 : 680
-    minimumHeight: imageWriter.isEmbeddedMode() ? -1 : 420
+    maximumHeight: imageWriter.isEmbeddedMode() ? -1 : 420
     //maximumHeight: imageWriter.isEmbeddedMode() ? -1 : 420
 
     title: qsTr("Aliro-Ed Imager v%1").arg(imageWriter.constantVersion())
@@ -85,10 +87,12 @@ ApplicationWindow {
                 anchors.leftMargin: 50
 
                 rows: 6
-//                columns: 3
-                columns: 2
+                columns: 3
+//                columns: 2
                 columnSpacing: 25
 
+                // Jay Moran
+                // Move this button below
 //                ColumnLayout {
 //                    id: columnLayout
 //                    spacing: 0
@@ -105,6 +109,7 @@ ApplicationWindow {
 //                        font.family: robotoBold.name
 //                        font.bold: true
 //                        horizontalAlignment: Text.AlignHCenter
+//                        visible: false
 //                    }
 
 //                    ImButton {
@@ -123,6 +128,7 @@ ApplicationWindow {
 //                        }
 //                        Accessible.ignored: ospopup.visible || dstpopup.visible
 //                        Accessible.description: qsTr("Select this button to change the operating system")
+//                        visible: false
 //                    }
 //                }
 
@@ -160,6 +166,49 @@ ApplicationWindow {
                     }
                 }
 
+                // Jay Moran
+                // The CHOOSE OS button is set to visible: false.
+                // The button is needed otherwise the writing process will hang.
+                // There must be a component that's required from here.
+                ColumnLayout {
+                    id: columnLayout
+                    spacing: 0
+                    Layout.fillWidth: true
+
+                    Text {
+                        id: text1
+                        color: "#ffffff"
+                        text: qsTr("Operating System")
+                        Layout.fillWidth: true
+                        Layout.preferredHeight: 17
+                        Layout.preferredWidth: 100
+                        font.pixelSize: 12
+                        font.family: robotoBold.name
+                        font.bold: true
+                        horizontalAlignment: Text.AlignHCenter
+                        visible: false
+                    }
+
+                    ImButton {
+                        id: osbutton
+                        text: imageWriter.srcFileName() === "" ? qsTr("CHOOSE OS") : imageWriter.srcFileName()
+                        spacing: 0
+                        padding: 0
+                        bottomPadding: 0
+                        topPadding: 0
+                        Layout.minimumHeight: 40
+                        Layout.fillWidth: true
+                        onClicked: {
+                            // disable os popup here
+                            ospopup.open()
+                            osswipeview.currentItem.forceActiveFocus()
+                        }
+                        Accessible.ignored: ospopup.visible || dstpopup.visible
+                        Accessible.description: qsTr("Select this button to change the operating system")
+                        visible: false
+                    }
+                }
+
                 ColumnLayout {
                     spacing: 0
                     Layout.fillWidth: true
@@ -194,8 +243,8 @@ ApplicationWindow {
 
                 ColumnLayout {
                     id: columnLayout3
-//                    Layout.columnSpan: 3
-                    Layout.columnSpan: 2
+                    Layout.columnSpan: 3
+//                    Layout.columnSpan: 2
                     Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
 
                     Text {
@@ -256,8 +305,8 @@ ApplicationWindow {
                 }
 
                 Text {
-//                    Layout.columnSpan: 3
-                    Layout.columnSpan: 2
+                    Layout.columnSpan: 3
+//                    Layout.columnSpan: 2
                     color: "#ffffff"
                     font.pixelSize: 18
                     font.family: roboto.name
@@ -266,8 +315,8 @@ ApplicationWindow {
                 }
 
                 Text {
-//                    Layout.columnSpan: 3
-                    Layout.columnSpan: 2
+                    Layout.columnSpan: 3
+//                    Layout.columnSpan: 2
                     color: "#ffffff"
                     font.pixelSize: 18
                     font.family: roboto.name
@@ -277,8 +326,8 @@ ApplicationWindow {
 
                 RowLayout {
                     id: langbar
-//                    Layout.columnSpan: 3
-                    Layout.columnSpan: 2
+                    Layout.columnSpan: 3
+//                    Layout.columnSpan: 2
                     Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
                     Layout.bottomMargin: 5
                     spacing: 10
@@ -340,13 +389,13 @@ ApplicationWindow {
 
                 /* Language/keyboard bar is normally only visible in embedded mode.
                    To test translations also show it when shift+ctrl+L is pressed. */
-                Shortcut {
-                    sequences: ["Shift+Ctrl+L", "Shift+Meta+L"]
-                    context: Qt.ApplicationShortcut
-                    onActivated: {
-                        langbar.visible = true
-                    }
-                }
+//                Shortcut {
+//                    sequences: ["Shift+Ctrl+L", "Shift+Meta+L"]
+//                    context: Qt.ApplicationShortcut
+//                    onActivated: {
+//                        langbar.visible = true
+//                    }
+//                }
             }
         }
     }

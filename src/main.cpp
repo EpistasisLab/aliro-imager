@@ -95,7 +95,7 @@ int main(int argc, char *argv[])
     QString customQm;
     QSettings settings;
 
-    QUrl url = QUrl::fromLocalFile("Aliro.img.xz");
+    QUrl url = QUrl::fromLocalFile("aliro.img.xz");
 
     /* Parse commandline arguments (if any) */
     // QString customRepo;
