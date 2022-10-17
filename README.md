@@ -1,15 +1,15 @@
-# rpi-imager
+# aliro-imager
 
-Raspberry Pi Imaging Utility
+<!-- Aliro-Ed Imaging Utility -->
 
-- Download the latest version for Windows, macOS and Ubuntu from the [Raspberry Pi downloads page](https://www.raspberrypi.com/software/).
-- To install on Raspberry Pi OS, use `sudo apt update && sudo apt install rpi-imager`.
+<!-- - Download the latest version for Windows, macOS and Ubuntu from the [Raspberry Pi downloads page](https://www.raspberrypi.com/software/). -->
+<!-- - To install on Raspberry Pi OS, use `sudo apt update && sudo apt install rpi-imager`. -->
 
 ## License
 
 The main code of the Imaging Utility is made available under the terms of the Apache license.
 See license.txt and files in "src/dependencies" folder for more information about the various open source licenses that apply to the third-party dependencies used such as Qt, libarchive, drivelist, mountutils and libcurl.
-For the embedded (netboot) build see also "embedded/legal-info" for more information about the extra system software included in that.
+<!-- For the embedded (netboot) build see also "embedded/legal-info" for more information about the extra system software included in that. -->
 
 ## How to rebuild
 
@@ -27,6 +27,7 @@ sudo apt install --no-install-recommends build-essential devscripts debhelper cm
 
 #### Get the source
 
+<!-- Move this URL to EpistasisLab when the project is moved over -->
 ```
 git clone --depth 1 https://github.com/raspberrypi/rpi-imager
 ```
@@ -42,7 +43,7 @@ export DEB_BUILD_OPTIONS="parallel=1"
 #### Build the Debian package
 
 ```
-cd rpi-imager
+cd aliro-imager
 debuild -uc -us
 ```
 
@@ -51,7 +52,7 @@ Can install it with apt:
 
 ```
 cd ..
-sudo apt install ./rpi-imager*.deb
+sudo apt install ./aliro-imager*.deb
 ```
 
 It should create an icon in the start menu under "Utilities" or "Accessories".
@@ -70,6 +71,7 @@ sudo yum install git gcc gcc-c++ make cmake libarchive-devel libcurl-devel opens
 
 #### Get the source
 
+<!-- Move this URL to EpistasisLab when the project is moved over -->
 ```
 git clone --depth 1 https://github.com/raspberrypi/rpi-imager
 ```
@@ -77,7 +79,7 @@ git clone --depth 1 https://github.com/raspberrypi/rpi-imager
 #### Build and install the software
 
 ```
-cd rpi-imager
+cd aliro-imager
 mkdir -p build
 cd build
 cmake ../src
@@ -107,10 +109,10 @@ Building can be done manually using the command-line, using "cmake", "make", etc
 - Open src/CMakeLists.txt in Qt creator.
 - For builds you distribute to others, make sure you choose "Release" in the toolchain settings and not the debug flavour.
 - Menu "Build" -> "Build all"
-- Result will be in build_rpi-imager_someversion
+- Result will be in build_aliro-imager_someversion
 - Go to the BUILD folder, right click on the .nsi script "Compile NSIS script", to create installer.
 
-Note: the CMake integration in Qt Creator is a bit flaky at times. If you made any custom changes to the CMakeLists.txt file and it subsequently gets in an endless loop where it never finishes the "configures" stage while re-processing the file, delete "build_rpi-imager_someversion" directory and try again.
+Note: the CMake integration in Qt Creator is a bit flaky at times. If you made any custom changes to the CMakeLists.txt file and it subsequently gets in an endless loop where it never finishes the "configures" stage while re-processing the file, delete "build_aliro-imager_someversion" directory and try again.
 
 ### Mac OS X
 
@@ -126,22 +128,22 @@ During installation, choose a Qt 5.x edition and CMake.
 - Download source .zip from github and extract it to a folder on disk
 - Start Qt Creator (may need to start "finder" navigate to home folder using the "Go" menu, and find Qt folder to start it manually as it may not have created icon in Applications), and open src/CMakeLists.txt
 - Menu "Build" -> "Build all"
-- Result will be in build_rpi-imager_someversion
+- Result will be in build_aliro-imager_someversion
 - For distribution to others: code sign the .app, create a DMG, code sign the DMG, submit it for notarization to Apple and staple the notarization ticket to the DMG.
 
 E.g.:
 
 ```
-cd build-rpi-imager-Desktop_Qt_5_14_1_clang_64bit-Release/
-codesign --deep --force --verify --verbose --sign "YOUR KEYID" --options runtime rpi-imager.app
-mv rpi-imager.app "Raspberry Pi Imager.app"
-create-dmg Raspberry\ Pi\ Imager.app
-mv Raspberry\ Pi\ Imager\ .dmg imager.dmg
+cd build-aliro-imager-Desktop_Qt_5_14_1_clang_64bit-Release/
+codesign --deep --force --verify --verbose --sign "YOUR KEYID" --options runtime aliro-imager.app
+mv aliro-imager.app "Aliro Imager.app"
+create-dmg Aliro\ Imager.app
+mv Aliro\ Imager\ .dmg imager.dmg
 xcrun altool --notarize-app -t osx -f imager.dmg --primary-bundle-id="org.raspberrypi.imagingutility" -u YOUR-EMAIL-ADDRESS -p YOUR-APP-SPECIFIC-APPLE-PASSWORD -itc_provider TEAM-ID-IF-APPLICABLE
 xcrun stapler staple imager.dmg
 ```
 
-### Linux embedded (netboot) build
+<!-- ### Linux embedded (netboot) build
 
 The embedded build runs under a minimalistic Linux distribution compiled by buildroot.
 To build:
@@ -156,9 +158,9 @@ cd rpi-imager/embedded
 
 The result will be in the "output" directory.
 The files can be copied to a FAT32 formatted SD card, and inserted in a Pi for testing.
-If you would like to build a (signed) netboot image there are tools for that at: https://github.com/raspberrypi/usbboot/tree/master/tools
+If you would like to build a (signed) netboot image there are tools for that at: https://github.com/raspberrypi/usbboot/tree/master/tools -->
 
-## Other notes
+<!-- ## Other notes
 
 ### Debugging
 
@@ -201,4 +203,4 @@ defaults write org.raspberrypi.Imager.plist telemetry -bool NO
 
 When using the app, press <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>X</kbd> to reveal the **Advanced options** dialog.
 
-In here, you can specify several things you would otherwise set in the boot configuration files. For example, you can enable SSH, set the Wi-Fi login, and specify your locale settings for the system image.
+In here, you can specify several things you would otherwise set in the boot configuration files. For example, you can enable SSH, set the Wi-Fi login, and specify your locale settings for the system image. -->

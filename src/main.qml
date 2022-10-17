@@ -59,6 +59,8 @@ ApplicationWindow {
         spacing: 0
 
         Rectangle {
+            color: "#dddddd"
+            implicitWidth: window.width
             implicitHeight: window.height/2
 
             Image {
