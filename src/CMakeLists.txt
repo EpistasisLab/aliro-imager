@@ -299,8 +299,8 @@ else()
     endif()
 
     configure_file(
-        "${CMAKE_CURRENT_SOURCE_DIR}/linux/rpi-imager.metainfo.xml.in"
-        "${CMAKE_CURRENT_BINARY_DIR}/rpi-imager.metainfo.xml"
+        "${CMAKE_CURRENT_SOURCE_DIR}/linux/aliro-imager.metainfo.xml.in"
+        "${CMAKE_CURRENT_BINARY_DIR}/aliro-imager.metainfo.xml"
         @ONLY)
 
 #    install(TARGETS rpi-imager DESTINATION bin)
