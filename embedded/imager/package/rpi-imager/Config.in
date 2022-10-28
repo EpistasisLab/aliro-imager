@@ -1,5 +1,5 @@
 config BR2_PACKAGE_RPI_IMAGER
-        bool "rpi-imager"
+        bool "aliro-imager"
         select BR2_PACKAGE_QT5
         select BR2_PACKAGE_QT5BASE_GUI
         select BR2_PACKAGE_QT5BASE_CONCURRENT
@@ -18,4 +18,4 @@ config BR2_PACKAGE_RPI_IMAGER
         select BR2_PACKAGE_QT5TOOLS_LINGUIST_TOOLS
         
         help
-          Raspberry Pi Imager
+          Aliro-Ed Imager

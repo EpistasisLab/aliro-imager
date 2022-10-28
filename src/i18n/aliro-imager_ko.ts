@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="it_IT">
+<TS version="2.1" language="ko_KR">
 <context>
     <name>DownloadExtractThread</name>
     <message>
         <location filename="../downloadextractthread.cpp" line="171"/>
         <source>Error writing to storage</source>
-        <translation>Errore scrittura nello storage</translation>
+        <translation>저장소에 쓰는 중 오류 발생</translation>
     </message>
     <message>
         <location filename="../downloadextractthread.cpp" line="197"/>
         <location filename="../downloadextractthread.cpp" line="386"/>
         <source>Error extracting archive: %1</source>
-        <translation>Errore estrazione archivio: %1</translation>
+        <translation>보관 파일 추출 오류: %1</translation>
     </message>
     <message>
         <location filename="../downloadextractthread.cpp" line="262"/>
         <source>Error mounting FAT32 partition</source>
-        <translation>Errore montaggio partizione FAT32</translation>
+        <translation>FAT32 파티션 마운트 오류</translation>
     </message>
     <message>
         <location filename="../downloadextractthread.cpp" line="282"/>
         <source>Operating system did not mount FAT32 partition</source>
-        <translation>Il sistema operativo non ha montato la partizione FAT32</translation>
+        <translation>운영 체제에서 FAT32 파티션을 마운트하지 않음</translation>
     </message>
     <message>
         <location filename="../downloadextractthread.cpp" line="305"/>
         <source>Error changing to directory &apos;%1&apos;</source>
-        <translation>Errore passaggio a cartella &apos;%1&apos;</translation>
+        <translation>디렉토리 변경 오류 &apos;%1&apos;</translation>
     </message>
 </context>
 <context>
@@ -35,163 +35,162 @@
     <message>
         <location filename="../downloadthread.cpp" line="147"/>
         <source>Error running diskpart: %1</source>
-        <translation>Errore esecuzione diskpart: %1</translation>
+        <translation>디스크 파트를 실행하는 동안 오류 발생 : %1</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="168"/>
         <source>Error removing existing partitions</source>
-        <translation>Errore rimozione partizioni esistenti</translation>
+        <translation>기존 파티션 제거 오류</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="194"/>
         <source>Authentication cancelled</source>
-        <translation>Autenticazione annullata</translation>
+        <translation>인증 취소됨</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="197"/>
         <source>Error running authopen to gain access to disk device &apos;%1&apos;</source>
-        <translation>Errore esecuzione auhopen per ottenere accesso al dispositivo disco %1</translation>
+        <translation>디스크 디바이스에 대한 액세스 권한을 얻기 위해 authopen을 실행하는 중 오류 발생 &apos;%1&apos;</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="198"/>
-        <source>Please verify if &apos;Raspberry Pi Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
-        <translation>Verifica se a &apos;Raspberry Pi Imager&apos; è consentito l&apos;accesso a &apos;volumi rimovibili&apos; nelle impostazioni privacy (in &apos;file e cartelle&apos; o in alternativa concedi &apos;accesso completo al disco&apos;).</translation>
+        <source>Please verify if &apos;Aliro-Ed Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
+        <translation>&apos;Aliro-Ed Imager&apos;가 개인 정보 설정(&apos;파일 및 폴더&apos;에서 또는 &apos;전체 디스크 액세스&apos;를 부여)에서 &apos;제거 가능한 볼륨&apos;에 액세스할 수 있는지 확인하세요.</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="220"/>
         <source>Cannot open storage device &apos;%1&apos;.</source>
-        <translation>Impossibile aprire dispositivo storage &apos;%1&apos;.</translation>
+        <translation>저장 장치를 열 수 없습니다 &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="262"/>
         <source>discarding existing data on drive</source>
-        <translation>elimina i dati esistenti nell&apos;unità</translation>
+        <translation>드라이브의 기존 데이터 삭제</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="282"/>
         <source>zeroing out first and last MB of drive</source>
-        <translation>azzera il primo e l&apos;ultimo MB dell&apos;unità</translation>
+        <translation>드라이브의 처음과 마지막 MB를 비웁니다.</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="288"/>
         <source>Write error while zero&apos;ing out MBR</source>
-        <translation>Errore scrittura durante azzeramento MBR</translation>
+        <translation>MBR을 zero&apos;ing out 하는 동안 쓰기 오류 발생 </translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="779"/>
         <source>Error reading from storage.&lt;br&gt;SD card may be broken.</source>
-        <translation>Errore lettura dallo storage.&lt;br&gt;La scheda SD potrebbe essere danneggiata.</translation>
+        <translation>저장소에서 읽는 동안 오류가 발생했습니다.&lt;br&gt;SD 카드가 고장 났을 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="855"/>
         <source>Waiting for FAT partition to be mounted</source>
-        <translation>Attesa montaggio partizione FAT</translation>
+        <translation>FAT 파티션이 마운트되기를 기다리는 중</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="941"/>
         <source>Error mounting FAT32 partition</source>
-        <translation>Errore montaggio partizione FAT32</translation>
+        <translation>FAT32 파티션 마운트 오류</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="963"/>
         <source>Operating system did not mount FAT32 partition</source>
-        <translation>Il sistema operativo non ha montato la partizione FAT32</translation>
+        <translation>운영 체제 FAT32 파티션이 마운트되지 않았습니다.</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="996"/>
         <source>Unable to customize. File &apos;%1&apos; does not exist.</source>
-        <translation>Impossibile personalizzare. Il file &apos;%1&apos; non esiste.</translation>
+        <translation>지정할 수 없습니다. 파일이 &apos;%1&apos; 존재하지 않습니다.</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="1000"/>
         <source>Customizing image</source>
-        <translation>Personalizza immagine</translation>
+        <translation>이미지 사용자 정의</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="1085"/>
         <source>Error creating firstrun.sh on FAT partition</source>
-        <translation>Errore creazione firstrun.sh nella partizione FAT</translation>
+        <translation>FAT 파티션에 firstrun.sh을 만드는 동안 오류 발생</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="1037"/>
         <source>Error writing to config.txt on FAT partition</source>
-        <translation>Errore scrittura in config.txt nella partizione FAT</translation>
+        <translation>FAT 파티션에 config.txt 쓰던 중 오류 발생</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="1102"/>
         <source>Error creating user-data cloudinit file on FAT partition</source>
-        <translation>Errore nel creare il file cloudinit dei dati utente nella partizione FAT</translation>
+        <translation>FAT 파티션에 사용자 데이터 cloudinit 파일을 만드는 중 오류 발생</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="1116"/>
         <source>Error creating network-config cloudinit file on FAT partition</source>
-        <translation>Errore durante la creazione del file network-config cloudinit nella partizione FAT</translation>
+        <translation>FAT 파티션에 네트워크 구성 cloudinit 파일을 생성하는 중 오류 발생</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="1139"/>
         <source>Error writing to cmdline.txt on FAT partition</source>
-        <translation>Errore scrittura in cmdline.txt nella partizione FAT</translation>
+        <translation>FAT 파티션에 cmdline.txt 쓰던 중 오류 발생</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="432"/>
         <source>Access denied error while writing file to disk.</source>
-        <translation>Errore accesso negato durante la scrittura del file su disco.</translation>
+        <translation>디스크에 파일을 쓰는 동안 액세스 거부 오류가 발생했습니다.</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="437"/>
-        <source>Controlled Folder Access seems to be enabled. Please add both rpi-imager.exe and fat32format.exe to the list of allowed apps and try again.</source>
-        <translation>Sembra sia abilitato l&apos;accesso controllato alle cartelle. 
-Aggiungi sia &apos;rpi-imager.exe&apos; che &apos;fat32format.exe&apos; all&apos;elenco delle app consentite e riprova.</translation>
+        <source>Controlled Folder Access seems to be enabled. Please add both aliro-imager.exe and fat32format.exe to the list of allowed apps and try again.</source>
+        <translation>제어된 폴더 액세스가 설정된 것 같습니다. aliro-imager.exe 및 fat32format.exe를 허용된 앱 리스트에서 추가하고 다시 시도하십시오.</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="444"/>
         <source>Error writing file to disk</source>
-        <translation>Errore scrittura file su disco</translation>
+        <translation>디스크에 파일 쓰기 오류</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="463"/>
         <source>Error downloading: %1</source>
-        <translation>Errore download: %1</translation>
+        <translation>다운로드 중 오류: %1</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="686"/>
         <source>Error writing to storage (while flushing)</source>
-        <translation>Errore scrittura nello storage (durante flushing)</translation>
+        <translation>저장소에 쓰는 중 오류 발생(flushing..)</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="693"/>
         <source>Error writing to storage (while fsync)</source>
-        <translation>Errore scrittura nello storage (durante fsync)</translation>
+        <translation>스토리지에 쓰는 중 오류 발생(fsync..)</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="674"/>
         <source>Download corrupt. Hash does not match</source>
-        <translation>Download corrotto.&lt;br&gt;L&apos;hash non corrisponde</translation>
+        <translation>다운로드가 손상되었습니다. 해시가 일치하지 않습니다.</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="114"/>
         <source>opening drive</source>
-        <translation>apertura unità</translation>
+        <translation>드라이브 열기</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="300"/>
         <source>Write error while trying to zero out last part of card.&lt;br&gt;Card could be advertising wrong capacity (possible counterfeit).</source>
-        <translation>Errore di scrittura durante il tentativo di azzerare l&apos;ultima parte della scheda.&lt;br&gt;La scheda potrebbe riportare una capacità maggiore di quella reale (possibile contraffazione).</translation>
+        <translation>SD card의 마지막 부분을 비워내는 동안 오류가 발생했습니다.&lt;br&gt;카드가 잘못된 용량을 표기하고 있을 수 있습니다(위조 품목).</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="389"/>
         <source>starting download</source>
-        <translation>avvio download</translation>
+        <translation>다운로드 시작</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="719"/>
         <source>Error writing first block (partition table)</source>
-        <translation>Errore scrittura primo blocco (tabella partizione)</translation>
+        <translation>첫 번째 블록을 쓰는 중 오류 발생 (파티션 테이블)</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="798"/>
         <source>Verifying write failed. Contents of SD card is different from what was written to it.</source>
-        <translation>Verifica scrittura fallita.&lt;br&gt;Il contenuto della SD è differente da quello che vi è stato scritto.</translation>
+        <translation>쓰기를 확인하지 못했습니다. SD카드 내용과 쓰인 내용이 다릅니다.</translation>
     </message>
 </context>
 <context>
@@ -201,57 +200,57 @@ Aggiungi sia &apos;rpi-imager.exe&apos; che &apos;fat32format.exe&apos; all&apos
         <location filename="../driveformatthread.cpp" line="124"/>
         <location filename="../driveformatthread.cpp" line="185"/>
         <source>Error partitioning: %1</source>
-        <translation>Errore partizionamento: %1</translation>
+        <translation>분할 오류: %1</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="84"/>
         <source>Error starting fat32format</source>
-        <translation>Errore avvio fat32format</translation>
+        <translation>시작 오류 fat32format</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="94"/>
         <source>Error running fat32format: %1</source>
-        <translation>Errore esecuzione fat32format: %1</translation>
+        <translation>실행 중 오류 fat32format: %1</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="104"/>
         <source>Error determining new drive letter</source>
-        <translation>Errore determinazione nuova lettera unità</translation>
+        <translation>새 드라이브 문자 확인 오류</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="109"/>
         <source>Invalid device: %1</source>
-        <translation>Dispositivo non valido: %1</translation>
+        <translation>유효하지 않는 디바이스: %1</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="146"/>
         <source>Error formatting (through udisks2)</source>
-        <translation>Errore formattazione (attraverso udisk2)</translation>
+        <translation>포맷 오류 (udisks2 통해)</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="174"/>
         <source>Error starting sfdisk</source>
-        <translation>Errore avvio sfdisk</translation>
+        <translation>시작 오류 sfdisk</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="199"/>
         <source>Partitioning did not create expected FAT partition %1</source>
-        <translation>Il partizionamento non ha creato la partizione FAT prevista %1</translation>
+        <translation>FAT partition %1을 분할하여 생성하지 못했습니다.</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="208"/>
         <source>Error starting mkfs.fat</source>
-        <translation>Errore avvio mkfs.fat</translation>
+        <translation>시작 오류 mkfs.fat</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="218"/>
         <source>Error running mkfs.fat: %1</source>
-        <translation>Errore esecuzione mkfs.fat: %1</translation>
+        <translation>실행 오류 mkfs.fat: %1</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="225"/>
         <source>Formatting not implemented for this platform</source>
-        <translation>Formattazione non implementata per questa piattaforma</translation>
+        <translation>이 플랫폼에 대해 포맷이 구현되지 않았습니다.</translation>
     </message>
 </context>
 <context>
@@ -259,27 +258,27 @@ Aggiungi sia &apos;rpi-imager.exe&apos; che &apos;fat32format.exe&apos; all&apos
     <message>
         <location filename="../imagewriter.cpp" line="257"/>
         <source>Storage capacity is not large enough.&lt;br&gt;Needs to be at least %1 GB.</source>
-        <translation>La capacità dello storage non è sufficiente.&lt;br&gt;Sono necessari almeno %1 GB.</translation>
+        <translation>저장소 공간이 충분하지 않습니다.&lt;br&gt;최소 %1 GB 이상이어야 합니다.</translation>
     </message>
     <message>
         <location filename="../imagewriter.cpp" line="263"/>
         <source>Input file is not a valid disk image.&lt;br&gt;File size %1 bytes is not a multiple of 512 bytes.</source>
-        <translation>Il file sorgente non è un&apos;immagine disco valida.&lt;br&gt;La dimensione file %1 non è un multiplo di 512 byte.</translation>
+        <translation>입력 파일이 올바른 디스크 이미지가 아닙니다.&lt;br&gt;파일사이즈 %1 바이트가 512바이트의 배수가 아닙니다.</translation>
     </message>
     <message>
         <location filename="../imagewriter.cpp" line="445"/>
         <source>Downloading and writing image</source>
-        <translation>Download e scrittura file immagine</translation>
+        <translation>이미지 다운로드 및 쓰기</translation>
     </message>
     <message>
         <location filename="../imagewriter.cpp" line="578"/>
         <source>Select image</source>
-        <translation>Seleziona file immagine</translation>
+        <translation>이미지 선택하기</translation>
     </message>
     <message>
         <location filename="../imagewriter.cpp" line="979"/>
         <source>Would you like to prefill the wifi password from the system keychain?</source>
-        <translation>Vuoi precompilare la password WiFi usando il portachiavi di sistema?</translation>
+        <translation>wifi password를 미리 입력하시겠습니까?</translation>
     </message>
 </context>
 <context>
@@ -287,12 +286,12 @@ Aggiungi sia &apos;rpi-imager.exe&apos; che &apos;fat32format.exe&apos; all&apos
     <message>
         <location filename="../localfileextractthread.cpp" line="34"/>
         <source>opening image file</source>
-        <translation>apertura file immagine</translation>
+        <translation>이미지 파일 열기</translation>
     </message>
     <message>
         <location filename="../localfileextractthread.cpp" line="39"/>
         <source>Error opening image file</source>
-        <translation>Errore durante l&apos;apertura del file immagine</translation>
+        <translation>이미지 파일 열기 오류</translation>
     </message>
 </context>
 <context>
@@ -300,22 +299,22 @@ Aggiungi sia &apos;rpi-imager.exe&apos; che &apos;fat32format.exe&apos; all&apos
     <message>
         <location filename="../MsgPopup.qml" line="98"/>
         <source>NO</source>
-        <translation>NO</translation>
+        <translation>아니요</translation>
     </message>
     <message>
         <location filename="../MsgPopup.qml" line="109"/>
         <source>YES</source>
-        <translation>SI</translation>
+        <translation>예</translation>
     </message>
     <message>
         <location filename="../MsgPopup.qml" line="120"/>
         <source>CONTINUE</source>
-        <translation>CONTINUA</translation>
+        <translation>계속</translation>
     </message>
     <message>
         <location filename="../MsgPopup.qml" line="130"/>
         <source>QUIT</source>
-        <translation>ESCI</translation>
+        <translation>나가기</translation>
     </message>
 </context>
 <context>
@@ -323,64 +322,56 @@ Aggiungi sia &apos;rpi-imager.exe&apos; che &apos;fat32format.exe&apos; all&apos
     <message>
         <location filename="../OptionsPopup.qml" line="79"/>
         <source>Advanced options</source>
-        <translation>Opzioni avanzate</translation>
+        <translation>고급 옵션</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="96"/>
         <source>Image customization options</source>
-        <translation>Opzioni personalizzazione immagine</translation>
+        <translation>이미지 사용자 정의 옵션</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="104"/>
         <source>for this session only</source>
-        <translation>solo per questa sessione</translation>
+        <translation>이 세션에 한하여</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="105"/>
         <source>to always use</source>
-        <translation>da usare sempre</translation>
+        <translation>항상 사용</translation>
     </message>
     <message>
         <source>Disable overscan</source>
-        <translation type="vanished">Disabilita overscan</translation>
+        <translation type="vanished">overscan 사용 안 함</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="119"/>
         <source>Set hostname:</source>
-        <translation>Imposta nome host:</translation>
+        <translation>hostname 설정:</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="138"/>
         <source>Enable SSH</source>
-        <translation>Abilita SSH</translation>
+        <translation>SSH 사용</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="160"/>
         <source>Use password authentication</source>
-        <translation>Usa password autenticazione</translation>
-    </message>
-    <message>
-        <source>Set password for &apos;pi&apos; user:</source>
-        <translation type="vanished">Imposta password utente &apos;pi&apos;:</translation>
+        <translation>비밀번호 인증 사용</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="170"/>
         <source>Allow public-key authentication only</source>
-        <translation>Permetti solo autenticazione con chiave pubblica</translation>
-    </message>
-    <message>
-        <source>Set authorized_keys for &apos;pi&apos;:</source>
-        <translation type="vanished">Imposta authorized_key per &apos;pi&apos;:</translation>
+        <translation>공개 키만 인증 허용</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="188"/>
         <source>Set authorized_keys for &apos;%1&apos;:</source>
-        <translation>Imposta authorized_keys per &apos;%1&apos;:</translation>
+        <translation>&apos;%1&apos; 인증키 설정:</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="261"/>
         <source>Configure wireless LAN</source>
-        <translation>Configura WiFi</translation>
+        <translation>무선 LAN 설정</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="280"/>
@@ -391,76 +382,76 @@ Aggiungi sia &apos;rpi-imager.exe&apos; che &apos;fat32format.exe&apos; all&apos
         <location filename="../OptionsPopup.qml" line="234"/>
         <location filename="../OptionsPopup.qml" line="300"/>
         <source>Password:</source>
-        <translation>Password:</translation>
+        <translation>비밀번호:</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="200"/>
         <source>Set username and password</source>
-        <translation>Imposta nome utente e password</translation>
+        <translation>사용자 이름 및 비밀번호 설정</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="219"/>
         <source>Username:</source>
-        <translation>Nome utente:</translation>
+        <translation>사용자 이름:</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="295"/>
         <source>Hidden SSID</source>
-        <translation>SSID nascosto</translation>
+        <translation>숨겨진 SSID</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="316"/>
         <source>Show password</source>
-        <translation>Visualizza password</translation>
+        <translation>비밀번호 표시</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="321"/>
         <source>Wireless LAN country:</source>
-        <translation>Nazione WiFi:</translation>
+        <translation>무선 LAN 국가:</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="332"/>
         <source>Set locale settings</source>
-        <translation>Imposta configurazioni locali</translation>
+        <translation>로케일 설정 지정</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="342"/>
         <source>Time zone:</source>
-        <translation>Fuso orario:</translation>
+        <translation>시간대:</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="352"/>
         <source>Keyboard layout:</source>
-        <translation>Layout tastiera:</translation>
+        <translation>키보드 레이아웃:</translation>
     </message>
     <message>
         <source>Skip first-run wizard</source>
-        <translation type="vanished">Salta procedura prima impostazione</translation>
+        <translation type="vanished">초기 실행 마법사 건너뛰기</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="365"/>
         <source>Persistent settings</source>
-        <translation>Impostazioni persistenti</translation>
+        <translation>영구적으로 설정</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="373"/>
         <source>Play sound when finished</source>
-        <translation>Riproduci suono quando completato</translation>
+        <translation>완료되면 효과음으로 알림</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="377"/>
         <source>Eject media when finished</source>
-        <translation>Espelli media quando completato</translation>
+        <translation>완료되면 미디어 꺼내기</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="381"/>
         <source>Enable telemetry</source>
-        <translation>Abilita telemetria</translation>
+        <translation>이미지 다운로드 통계 관하여 정보 수집 허용</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="394"/>
         <source>SAVE</source>
-        <translation>SALVA</translation>
+        <translation>저장</translation>
     </message>
 </context>
 <context>
@@ -468,7 +459,7 @@ Aggiungi sia &apos;rpi-imager.exe&apos; che &apos;fat32format.exe&apos; all&apos
     <message>
         <location filename="../linux/linuxdrivelist.cpp" line="111"/>
         <source>Internal SD card reader</source>
-        <translation>Lettore scheda SD interno</translation>
+        <translation>내장 SD 카드 리더기</translation>
     </message>
 </context>
 <context>
@@ -476,287 +467,283 @@ Aggiungi sia &apos;rpi-imager.exe&apos; che &apos;fat32format.exe&apos; all&apos
     <message>
         <location filename="../UseSavedSettingsPopup.qml" line="72"/>
         <source>Warning: advanced settings set</source>
-        <translation>Attenzione: impostazioni avanzate impostate</translation>
+        <translation>경고: 고급 설정이 설정됨</translation>
     </message>
     <message>
         <location filename="../UseSavedSettingsPopup.qml" line="86"/>
         <source>Would you like to apply the image customization settings saved earlier?</source>
-        <translation>Vuoi applicare le impostazioni di personalizzazione dell&apos;immagine salvate in precedenza?</translation>
+        <translation>이전에 저장한 이미지 사용자 지정 설정을 적용하시겠습니까?</translation>
     </message>
     <message>
         <location filename="../UseSavedSettingsPopup.qml" line="95"/>
         <source>NO, CLEAR SETTINGS</source>
-        <translation>NO, AZZERA IMPOSTAZIONI</translation>
+        <translation>아니요, 설정 지우기</translation>
     </message>
     <message>
         <location filename="../UseSavedSettingsPopup.qml" line="105"/>
         <source>YES</source>
-        <translation>SI&apos;</translation>
+        <translation>예</translation>
     </message>
     <message>
         <location filename="../UseSavedSettingsPopup.qml" line="115"/>
         <source>EDIT SETTINGS</source>
-        <translation>MODIFICA IMPOSTAZIONI</translation>
+        <translation>설정을 편집하기</translation>
     </message>
 </context>
 <context>
     <name>main</name>
     <message>
         <location filename="../main.qml" line="24"/>
-        <source>Raspberry Pi Imager v%1</source>
-        <translation>Raspberry Pi Imager v. %1</translation>
+        <source>Aliro-Ed Imager v%1</source>
+        <translation>Aliro-Ed Imager v%1</translation>
     </message>
     <message>
         <location filename="../main.qml" line="99"/>
         <location filename="../main.qml" line="399"/>
         <source>Operating System</source>
-        <translation>Sistema operativo</translation>
+        <translation>운영체제</translation>
     </message>
     <message>
         <location filename="../main.qml" line="111"/>
         <source>CHOOSE OS</source>
-        <translation>SCEGLI S.O.</translation>
+        <translation>운영체제 선택</translation>
     </message>
     <message>
         <location filename="../main.qml" line="123"/>
         <source>Select this button to change the operating system</source>
-        <translation>Seleziona questo pulsante per modificare il sistema operativo scelto</translation>
+        <translation>운영 체제를 변경하려면 이 버튼을 선택합니다.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="135"/>
         <location filename="../main.qml" line="713"/>
         <source>Storage</source>
-        <translation>Scheda SD</translation>
+        <translation>저장소</translation>
     </message>
     <message>
         <location filename="../main.qml" line="147"/>
         <location filename="../main.qml" line="1038"/>
         <source>CHOOSE STORAGE</source>
-        <translation>SCEGLI SCHEDA SD</translation>
-    </message>
-    <message>
-        <source>Select this button to change the destination SD card</source>
-        <translation type="vanished">Seleziona questo pulsante per modificare la scheda SD destinazione</translation>
+        <translation>저장소 선택</translation>
     </message>
     <message>
         <location filename="../main.qml" line="173"/>
         <source>WRITE</source>
-        <translation>SCRIVI</translation>
+        <translation>쓰기</translation>
     </message>
     <message>
         <location filename="../main.qml" line="177"/>
         <source>Select this button to start writing the image</source>
-        <translation>Seleziona questo pulsante per avviare la scrittura del file immagine</translation>
+        <translation>이미지 쓰기를 시작하려면 버튼을 선택합니다.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="218"/>
         <source>CANCEL WRITE</source>
-        <translation>ANNULLA SCRITTURA</translation>
+        <translation>쓰기 취소</translation>
     </message>
     <message>
         <location filename="../main.qml" line="221"/>
         <location filename="../main.qml" line="965"/>
         <source>Cancelling...</source>
-        <translation>Annullamento...</translation>
+        <translation>취소 하는 중...</translation>
     </message>
     <message>
         <location filename="../main.qml" line="229"/>
         <source>CANCEL VERIFY</source>
-        <translation>ANNULLA VERIFICA</translation>
+        <translation>확인 취소</translation>
     </message>
     <message>
         <location filename="../main.qml" line="232"/>
         <location filename="../main.qml" line="988"/>
         <location filename="../main.qml" line="1057"/>
         <source>Finalizing...</source>
-        <translation>Finalizzazione...</translation>
+        <translation>마무리 중...</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="247"/>
+        <source>Select this button to access advanced settings</source>
+        <translation>고급 설정에 액세스하려면 버튼을 선택합니다.</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="261"/>
+        <source>Using custom repository: %1</source>
+        <translation>사용자 지정 리포지토리 사용: %1</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="270"/>
+        <source>Keyboard navigation: &lt;tab&gt; navigate to next button &lt;space&gt; press button/select item &lt;arrow up/down&gt; go up/down in lists</source>
+        <translation>키보드 탐색: &lt;tab&gt; 다음 버튼으로 이동 &lt;space&gt; 버튼 선택 및 항목 선택 &lt;arrow up/down&gt; 목록에서 위아래로 이동</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="290"/>
+        <source>Language: </source>
+        <translation>언어: </translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="313"/>
+        <source>Keyboard: </source>
+        <translation>키보드: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="505"/>
         <location filename="../main.qml" line="1022"/>
         <source>Erase</source>
-        <translation>Cancella</translation>
+        <translation>삭제</translation>
     </message>
     <message>
         <location filename="../main.qml" line="506"/>
         <source>Format card as FAT32</source>
-        <translation>Formatta scheda come FAT32</translation>
+        <translation>FAT32로 카드 형식 지정</translation>
     </message>
     <message>
         <location filename="../main.qml" line="515"/>
         <source>Use custom</source>
-        <translation>Usa immagine personalizzata</translation>
+        <translation>사용자 정의 사용</translation>
     </message>
     <message>
         <location filename="../main.qml" line="516"/>
         <source>Select a custom .img from your computer</source>
-        <translation>Seleziona un file immagine .img personalizzato</translation>
+        <translation>컴퓨터에서 사용자 지정 .img를 선택합니다.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="461"/>
         <source>Back</source>
-        <translation>Indietro</translation>
+        <translation>뒤로 가기</translation>
     </message>
     <message>
         <location filename="../main.qml" line="157"/>
         <source>Select this button to change the destination storage device</source>
-        <translation>Seleziona questo pulsante per modificare il dispositivo archiviazione destinazione</translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="247"/>
-        <source>Select this button to access advanced settings</source>
-        <translation>Seleziona questo pulsante per accedere alle impostazioni avanzate</translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="261"/>
-        <source>Using custom repository: %1</source>
-        <translation>Usa repository personalizzato: %1</translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="270"/>
-        <source>Keyboard navigation: &lt;tab&gt; navigate to next button &lt;space&gt; press button/select item &lt;arrow up/down&gt; go up/down in lists</source>
-        <translation>Navigazione da tastiera: &lt;tab&gt; vai al prossimo pulsante &lt;spazio&gt; premi il pulsante/seleziona la voce &lt;freccia su/giù&gt; vai su/giù negli elenchi</translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="290"/>
-        <source>Language: </source>
-        <translation>Lingua: </translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="313"/>
-        <source>Keyboard: </source>
-        <translation>Tastiera: </translation>
+        <translation>저장 디바이스를 변경하려면 버튼을 선택합니다.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="462"/>
         <source>Go back to main menu</source>
-        <translation>Torna al menu principale</translation>
+        <translation>기본 메뉴로 돌아가기</translation>
     </message>
     <message>
         <location filename="../main.qml" line="628"/>
         <source>Released: %1</source>
-        <translation>Rilasciato: %1</translation>
+        <translation>릴리즈: %1</translation>
     </message>
     <message>
         <location filename="../main.qml" line="638"/>
         <source>Cached on your computer</source>
-        <translation>Memorizzato temporaneamente nel computer</translation>
+        <translation>컴퓨터에 캐시됨</translation>
     </message>
     <message>
         <location filename="../main.qml" line="640"/>
         <source>Local file</source>
-        <translation>File locale</translation>
+        <translation>로컬 파일</translation>
     </message>
     <message>
         <location filename="../main.qml" line="641"/>
         <source>Online - %1 GB download</source>
-        <translation>Online - Download %1 GB</translation>
+        <translation>온라인 - %1 GB 다운로드</translation>
     </message>
     <message>
         <location filename="../main.qml" line="766"/>
         <location filename="../main.qml" line="818"/>
         <location filename="../main.qml" line="824"/>
         <source>Mounted as %1</source>
-        <translation>Montato come %1</translation>
+        <translation>%1로 마운트</translation>
     </message>
     <message>
         <location filename="../main.qml" line="820"/>
         <source>[WRITE PROTECTED]</source>
-        <translation>[PROTETTA DA SCRITTURA]</translation>
+        <translation>[쓰기 보호됨]</translation>
     </message>
     <message>
         <location filename="../main.qml" line="862"/>
         <source>Are you sure you want to quit?</source>
-        <translation>Sei sicuro di voler uscire?</translation>
+        <translation>정말 그만두시겠습니까?</translation>
     </message>
     <message>
         <location filename="../main.qml" line="863"/>
-        <source>Raspberry Pi Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
-        <translation>Raspberry Pi Image è occupato.&lt;br&gt;Sei sicuro di voler uscire?</translation>
+        <source>Aliro-Ed Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
+        <translation>Aliro-Ed Imager가 사용 중입니다.&lt;br&gt;정말 그만두시겠습니까?</translation>
     </message>
     <message>
         <location filename="../main.qml" line="874"/>
         <source>Warning</source>
-        <translation>Attenzione</translation>
+        <translation>주의</translation>
     </message>
     <message>
         <location filename="../main.qml" line="882"/>
         <source>Preparing to write...</source>
-        <translation>Preparazione scrittura...</translation>
+        <translation>쓰기 준비 중...</translation>
     </message>
     <message>
         <location filename="../main.qml" line="906"/>
         <source>Update available</source>
-        <translation>Aggiornamento disponibile</translation>
+        <translation>업데이트 가능</translation>
     </message>
     <message>
         <location filename="../main.qml" line="907"/>
         <source>There is a newer version of Imager available.&lt;br&gt;Would you like to visit the website to download it?</source>
-        <translation>È disponibile una nuova versione di Imager.&lt;br&gt;Vuoi visitare il sito web per scaricare la nuova versione?</translation>
+        <translation>Aliro-Ed Imager의 최신 버전을 사용할 수 있습니다.&lt;br&gt;다운받기 위해 웹사이트를 방문하시겠습니까??</translation>
     </message>
     <message>
         <location filename="../main.qml" line="968"/>
         <source>Writing... %1%</source>
-        <translation>Scrittura...%1</translation>
+        <translation>쓰는 중... %1%</translation>
     </message>
     <message>
         <location filename="../main.qml" line="895"/>
         <source>All existing data on &apos;%1&apos; will be erased.&lt;br&gt;Are you sure you want to continue?</source>
-        <translation>Tutti i dati esistenti in &apos;%1&apos; verranno eliminati.&lt;br&gt;Sei sicuro di voler continuare?</translation>
+        <translation>&apos;%1&apos;에 존재하는 모든 데이터가 지워집니다.&lt;br&gt;계속하시겠습니까?</translation>
     </message>
     <message>
         <location filename="../main.qml" line="947"/>
         <source>Error downloading OS list from Internet</source>
-        <translation>Errore durante download elenco SO da internet</translation>
+        <translation>인터넷에서 OS 목록을 다운로드하는 중 오류 발생</translation>
     </message>
     <message>
         <location filename="../main.qml" line="991"/>
         <source>Verifying... %1%</source>
-        <translation>Verifica...%1</translation>
+        <translation>확인 중... %1%</translation>
     </message>
     <message>
         <location filename="../main.qml" line="998"/>
         <source>Preparing to write... (%1)</source>
-        <translation>Preparazione scrittura... (%1)</translation>
+        <translation>쓰기 준비 중... (%1)</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1014"/>
         <source>Error</source>
-        <translation>Errore</translation>
+        <translation>오류</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1021"/>
         <source>Write Successful</source>
-        <translation>Scrittura completata senza errori</translation>
+        <translation>쓰기 완료</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1023"/>
         <source>&lt;b&gt;%1&lt;/b&gt; has been erased&lt;br&gt;&lt;br&gt;You can now remove the SD card from the reader</source>
-        <translation>Azzeramento di &lt;b&gt;%1&lt;/b&gt; completato&lt;br&gt;&lt;br&gt;Ora puoi rimuovere la scheda SD dal lettore</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; 가 지워졌습니다.&lt;br&gt;&lt;br&gt;이제 SD card를 제거할 수 있습니다.</translation>
     </message>
     <message>
         <source>&lt;b&gt;%1&lt;/b&gt; has been written to &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation type="vanished">Scrittura di &lt;b&gt;%1&lt;/b&gt; in &lt;b&gt;%2&lt;/b&gt;completata</translation>
+        <translation type="vanished">&lt;b&gt;%1&lt;/b&gt;가 &lt;b&gt;%2&lt;/b&gt;에 쓰여졌습니다.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1030"/>
         <source>&lt;b&gt;%1&lt;/b&gt; has been written to &lt;b&gt;%2&lt;/b&gt;&lt;br&gt;&lt;br&gt;You can now remove the SD card from the reader</source>
-        <translation>Scrittura di &lt;b&gt;%1&lt;/b&gt; in &lt;b&gt;%2&lt;/b&gt;completata&lt;br&gt;&lt;br&gt;Ora puoi rimuovere la scheda SD dal lettore</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt;가 &lt;b&gt;%2&lt;/b&gt;&lt;br&gt;&lt;br&gt;에 쓰여졌습니다. 이제 SD card를 제거할 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1098"/>
         <source>Error parsing os_list.json</source>
-        <translation>Errore durante analisi file os_list.json</translation>
+        <translation>구문 분석 오류 os_list.json</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1271"/>
         <source>Connect an USB stick containing images first.&lt;br&gt;The images must be located in the root folder of the USB stick.</source>
-        <translation>Prima collega una chiavetta USB contenente il file immagine.&lt;br&gt;Il file immagine deve essere presente nella cartella principale della chiavetta USB.</translation>
+        <translation>먼저 이미지가 들어 있는 USB를 연결합니다.&lt;br&gt;이미지는 USB 루트 폴더에 있어야 합니다.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1287"/>
         <source>SD card is write protected.&lt;br&gt;Push the lock switch on the left side of the card upwards, and try again.</source>
-        <translation>La scheda SD è protetta da scrittura.&lt;br&gt;Sposta verso l&apos;alto l&apos;interruttore LOCK sul lato sinistro della scheda SD e riprova.</translation>
+        <translation>쓰기 금지된 SD card&lt;br&gt;카드 왼쪽에 있는 잠금 스위치를 위쪽으로 누른 후 다시 시도하십시오.</translation>
     </message>
 </context>
 </TS>

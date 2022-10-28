@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="en_US">
+<TS version="2.1" language="fr_FR">
 <context>
     <name>DownloadExtractThread</name>
     <message>
         <location filename="../downloadextractthread.cpp" line="171"/>
         <source>Error writing to storage</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur d&apos;écriture dans le stockage</translation>
     </message>
     <message>
         <location filename="../downloadextractthread.cpp" line="197"/>
         <location filename="../downloadextractthread.cpp" line="386"/>
         <source>Error extracting archive: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors de l&apos;extraction de l&apos;archive : %1</translation>
     </message>
     <message>
         <location filename="../downloadextractthread.cpp" line="262"/>
         <source>Error mounting FAT32 partition</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors du montage de la partition FAT32</translation>
     </message>
     <message>
         <location filename="../downloadextractthread.cpp" line="282"/>
         <source>Operating system did not mount FAT32 partition</source>
-        <translation type="unfinished"></translation>
+        <translation>Le système d&apos;exploitation n&apos;a pas monté la partition FAT32</translation>
     </message>
     <message>
         <location filename="../downloadextractthread.cpp" line="305"/>
         <source>Error changing to directory &apos;%1&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors du changement du répertoire &apos;%1&apos;</translation>
     </message>
 </context>
 <context>
@@ -35,12 +35,12 @@
     <message>
         <location filename="../downloadthread.cpp" line="147"/>
         <source>Error running diskpart: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors de l&apos;exécution de diskpart : %1</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="168"/>
         <source>Error removing existing partitions</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors de la suppression des partitions existantes</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="194"/>
@@ -50,17 +50,17 @@
     <message>
         <location filename="../downloadthread.cpp" line="197"/>
         <source>Error running authopen to gain access to disk device &apos;%1&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors de l&apos;exécution d&apos;authopen pour accéder au périphérique du stockage &apos;%1&apos;</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="198"/>
-        <source>Please verify if &apos;Raspberry Pi Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
+        <source>Please verify if &apos;Aliro-Ed Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="220"/>
         <source>Cannot open storage device &apos;%1&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible d&apos;ouvrir le périphérique de stockage &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="262"/>
@@ -75,12 +75,12 @@
     <message>
         <location filename="../downloadthread.cpp" line="288"/>
         <source>Write error while zero&apos;ing out MBR</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur d&apos;écriture lors du formatage du MBR</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="779"/>
         <source>Error reading from storage.&lt;br&gt;SD card may be broken.</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur de lecture du stockage.&lt;br&gt;La carte SD pourrait être défectueuse.</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="855"/>
@@ -90,12 +90,12 @@
     <message>
         <location filename="../downloadthread.cpp" line="941"/>
         <source>Error mounting FAT32 partition</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Erreur lors du montage de la partition FAT32</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="963"/>
         <source>Operating system did not mount FAT32 partition</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Le système d&apos;exploitation n&apos;a pas monté la partition FAT32</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="996"/>
@@ -139,7 +139,7 @@
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="437"/>
-        <source>Controlled Folder Access seems to be enabled. Please add both rpi-imager.exe and fat32format.exe to the list of allowed apps and try again.</source>
+        <source>Controlled Folder Access seems to be enabled. Please add both aliro-imager.exe and fat32format.exe to the list of allowed apps and try again.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -155,17 +155,17 @@
     <message>
         <location filename="../downloadthread.cpp" line="686"/>
         <source>Error writing to storage (while flushing)</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur d&apos;écriture dans le stockage (lors du formatage)</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="693"/>
         <source>Error writing to storage (while fsync)</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur d&apos;écriture dans le stockage (pendant l&apos;exécution de fsync)</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="674"/>
         <source>Download corrupt. Hash does not match</source>
-        <translation type="unfinished"></translation>
+        <translation>Téléchargement corrompu. La signature ne correspond pas</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="114"/>
@@ -175,7 +175,7 @@
     <message>
         <location filename="../downloadthread.cpp" line="300"/>
         <source>Write error while trying to zero out last part of card.&lt;br&gt;Card could be advertising wrong capacity (possible counterfeit).</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur d&apos;écriture lors de la tentative de formatage de la dernière partie de la carte.&lt;br&gt;Le stockage pourrait annoncer une mauvaise capacité (contrefaçon possible).</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="389"/>
@@ -185,12 +185,12 @@
     <message>
         <location filename="../downloadthread.cpp" line="719"/>
         <source>Error writing first block (partition table)</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors de l&apos;écriture du premier bloc (table de partion)</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="798"/>
         <source>Verifying write failed. Contents of SD card is different from what was written to it.</source>
-        <translation type="unfinished"></translation>
+        <translation>La vérification de l&apos;écriture à échoué. Le contenu de la carte SD est différent de ce qui y a été écrit.</translation>
     </message>
 </context>
 <context>
@@ -200,37 +200,37 @@
         <location filename="../driveformatthread.cpp" line="124"/>
         <location filename="../driveformatthread.cpp" line="185"/>
         <source>Error partitioning: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur de partitionnement : %1</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="84"/>
         <source>Error starting fat32format</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors du démarrage de fat32format</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="94"/>
         <source>Error running fat32format: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors de l&apos;execution de fat32format : %1</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="104"/>
         <source>Error determining new drive letter</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors de la détermination de la nouvelle lettre du stockage</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="109"/>
         <source>Invalid device: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Stockage invalide : %1</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="146"/>
         <source>Error formatting (through udisks2)</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur de formatage (via udisks2)</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="174"/>
         <source>Error starting sfdisk</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors du démarrage de sfdisk</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="199"/>
@@ -240,17 +240,17 @@
     <message>
         <location filename="../driveformatthread.cpp" line="208"/>
         <source>Error starting mkfs.fat</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors du démarrage de mkfs.fat</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="218"/>
         <source>Error running mkfs.fat: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors de l&apos;exécution de mkfs.fat : %1</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="225"/>
         <source>Formatting not implemented for this platform</source>
-        <translation type="unfinished"></translation>
+        <translation>Formatage non implémenté pour cette plateforme</translation>
     </message>
 </context>
 <context>
@@ -258,22 +258,22 @@
     <message>
         <location filename="../imagewriter.cpp" line="257"/>
         <source>Storage capacity is not large enough.&lt;br&gt;Needs to be at least %1 GB.</source>
-        <translation type="unfinished"></translation>
+        <translation>La capacité de stockage n&apos;est pas assez grande.&lt;br&gt;Elle nécessite d&apos;être d&apos;au moins %1 GO.</translation>
     </message>
     <message>
         <location filename="../imagewriter.cpp" line="263"/>
         <source>Input file is not a valid disk image.&lt;br&gt;File size %1 bytes is not a multiple of 512 bytes.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le fichier source n&apos;est pas une image disque valide.&lt;br&gt;La taille du fichier (d&apos;%1 octets) n&apos;est pas un multiple de 512 octets.</translation>
     </message>
     <message>
         <location filename="../imagewriter.cpp" line="445"/>
         <source>Downloading and writing image</source>
-        <translation type="unfinished"></translation>
+        <translation>Téléchargement et écriture de l&apos;image</translation>
     </message>
     <message>
         <location filename="../imagewriter.cpp" line="578"/>
         <source>Select image</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionnez l&apos;image</translation>
     </message>
     <message>
         <location filename="../imagewriter.cpp" line="979"/>
@@ -291,7 +291,7 @@
     <message>
         <location filename="../localfileextractthread.cpp" line="39"/>
         <source>Error opening image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur lors de l&apos;ouverture de l&apos;image disque</translation>
     </message>
 </context>
 <context>
@@ -299,17 +299,17 @@
     <message>
         <location filename="../MsgPopup.qml" line="98"/>
         <source>NO</source>
-        <translation type="unfinished"></translation>
+        <translation>NON</translation>
     </message>
     <message>
         <location filename="../MsgPopup.qml" line="109"/>
         <source>YES</source>
-        <translation type="unfinished"></translation>
+        <translation>OUI</translation>
     </message>
     <message>
         <location filename="../MsgPopup.qml" line="120"/>
         <source>CONTINUE</source>
-        <translation type="unfinished"></translation>
+        <translation>CONTINUER</translation>
     </message>
     <message>
         <location filename="../MsgPopup.qml" line="130"/>
@@ -451,7 +451,7 @@
     <message>
         <location filename="../linux/linuxdrivelist.cpp" line="111"/>
         <source>Internal SD card reader</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecteur de carte SD interne</translation>
     </message>
 </context>
 <context>
@@ -474,7 +474,7 @@
     <message>
         <location filename="../UseSavedSettingsPopup.qml" line="105"/>
         <source>YES</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">OUI</translation>
     </message>
     <message>
         <location filename="../UseSavedSettingsPopup.qml" line="115"/>
@@ -486,68 +486,103 @@
     <name>main</name>
     <message>
         <location filename="../main.qml" line="24"/>
-        <source>Raspberry Pi Imager v%1</source>
-        <translation type="unfinished"></translation>
+        <source>Aliro-Ed Imager v%1</source>
+        <translation>Aliro-Ed Imager v%1</translation>
     </message>
     <message>
         <location filename="../main.qml" line="99"/>
         <location filename="../main.qml" line="399"/>
         <source>Operating System</source>
-        <translation type="unfinished"></translation>
+        <translation>Système d&apos;exploitation</translation>
     </message>
     <message>
         <location filename="../main.qml" line="111"/>
         <source>CHOOSE OS</source>
-        <translation type="unfinished"></translation>
+        <translation>CHOISISSEZ L&apos;OS</translation>
     </message>
     <message>
         <location filename="../main.qml" line="123"/>
         <source>Select this button to change the operating system</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionnez ce bouton pour changer le système d&apos;exploitation</translation>
     </message>
     <message>
         <location filename="../main.qml" line="135"/>
         <location filename="../main.qml" line="713"/>
         <source>Storage</source>
-        <translation type="unfinished"></translation>
+        <translation>Stockage</translation>
     </message>
     <message>
         <location filename="../main.qml" line="147"/>
         <location filename="../main.qml" line="1038"/>
         <source>CHOOSE STORAGE</source>
-        <translation type="unfinished"></translation>
+        <translation>CHOISISSEZ LE STOCKAGE</translation>
+    </message>
+    <message>
+        <source>Select this button to change the destination SD card</source>
+        <translation type="vanished">Sélectionnez ce bouton pour changer la carte SD de destination</translation>
     </message>
     <message>
         <location filename="../main.qml" line="173"/>
         <source>WRITE</source>
-        <translation type="unfinished"></translation>
+        <translation>ÉCRIRE</translation>
     </message>
     <message>
         <location filename="../main.qml" line="177"/>
         <source>Select this button to start writing the image</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionnez ce bouton pour commencer l&apos;écriture de l&apos;image</translation>
     </message>
     <message>
         <location filename="../main.qml" line="218"/>
         <source>CANCEL WRITE</source>
-        <translation type="unfinished"></translation>
+        <translation>ANNULER L&apos;ÉCRITURE</translation>
     </message>
     <message>
         <location filename="../main.qml" line="221"/>
         <location filename="../main.qml" line="965"/>
         <source>Cancelling...</source>
-        <translation type="unfinished"></translation>
+        <translation>Annulation...</translation>
     </message>
     <message>
         <location filename="../main.qml" line="229"/>
         <source>CANCEL VERIFY</source>
-        <translation type="unfinished"></translation>
+        <translation>ANNULER LA VÉRIFICATION</translation>
     </message>
     <message>
         <location filename="../main.qml" line="232"/>
         <location filename="../main.qml" line="988"/>
         <location filename="../main.qml" line="1057"/>
         <source>Finalizing...</source>
+        <translation>Finalisation...</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="505"/>
+        <location filename="../main.qml" line="1022"/>
+        <source>Erase</source>
+        <translation>Formatter</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="506"/>
+        <source>Format card as FAT32</source>
+        <translation>Formater la carte SD en FAT32</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="515"/>
+        <source>Use custom</source>
+        <translation>Utiliser image personnalisée</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="516"/>
+        <source>Select a custom .img from your computer</source>
+        <translation>Sélectionnez une image disque personnalisée (.img) depuis votre ordinateur</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="461"/>
+        <source>Back</source>
+        <translation>Retour</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="157"/>
+        <source>Select this button to change the destination storage device</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -576,67 +611,36 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.qml" line="505"/>
-        <location filename="../main.qml" line="1022"/>
-        <source>Erase</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="506"/>
-        <source>Format card as FAT32</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="515"/>
-        <source>Use custom</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="516"/>
-        <source>Select a custom .img from your computer</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="461"/>
-        <source>Back</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="157"/>
-        <source>Select this button to change the destination storage device</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../main.qml" line="462"/>
         <source>Go back to main menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Retour au menu principal</translation>
     </message>
     <message>
         <location filename="../main.qml" line="628"/>
         <source>Released: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Sorti le : %1</translation>
     </message>
     <message>
         <location filename="../main.qml" line="638"/>
         <source>Cached on your computer</source>
-        <translation type="unfinished"></translation>
+        <translation>Mis en cache sur votre ordinateur</translation>
     </message>
     <message>
         <location filename="../main.qml" line="640"/>
         <source>Local file</source>
-        <translation type="unfinished"></translation>
+        <translation>Fichier local</translation>
     </message>
     <message>
         <location filename="../main.qml" line="641"/>
         <source>Online - %1 GB download</source>
-        <translation type="unfinished"></translation>
+        <translation>En ligne - %1 GO téléchargé</translation>
     </message>
     <message>
         <location filename="../main.qml" line="766"/>
         <location filename="../main.qml" line="818"/>
         <location filename="../main.qml" line="824"/>
         <source>Mounted as %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Mounté à %1</translation>
     </message>
     <message>
         <location filename="../main.qml" line="820"/>
@@ -646,16 +650,11 @@
     <message>
         <location filename="../main.qml" line="862"/>
         <source>Are you sure you want to quit?</source>
-        <translation type="unfinished"></translation>
+        <translation>Êtes-vous sûr de vouloir quitter ?</translation>
     </message>
     <message>
         <location filename="../main.qml" line="863"/>
-        <source>Raspberry Pi Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="874"/>
-        <source>Warning</source>
+        <source>Aliro-Ed Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -674,64 +673,73 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.qml" line="968"/>
-        <source>Writing... %1%</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="895"/>
-        <source>All existing data on &apos;%1&apos; will be erased.&lt;br&gt;Are you sure you want to continue?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="947"/>
-        <source>Error downloading OS list from Internet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="991"/>
-        <source>Verifying... %1%</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../main.qml" line="998"/>
         <source>Preparing to write... (%1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.qml" line="1014"/>
-        <source>Error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="1021"/>
-        <source>Write Successful</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="1023"/>
-        <source>&lt;b&gt;%1&lt;/b&gt; has been erased&lt;br&gt;&lt;br&gt;You can now remove the SD card from the reader</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="1030"/>
-        <source>&lt;b&gt;%1&lt;/b&gt; has been written to &lt;b&gt;%2&lt;/b&gt;&lt;br&gt;&lt;br&gt;You can now remove the SD card from the reader</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="1098"/>
-        <source>Error parsing os_list.json</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="1271"/>
-        <source>Connect an USB stick containing images first.&lt;br&gt;The images must be located in the root folder of the USB stick.</source>
-        <translation type="unfinished"></translation>
+        <source>&lt;b&gt;%1&lt;/b&gt; has been written to &lt;b&gt;%2&lt;/b&gt;</source>
+        <translation type="vanished">&lt;b&gt;%1&lt;/b&gt; a bien été écrit sur &lt;b&gt;%2&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1287"/>
         <source>SD card is write protected.&lt;br&gt;Push the lock switch on the left side of the card upwards, and try again.</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="874"/>
+        <source>Warning</source>
+        <translation>Attention</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="968"/>
+        <source>Writing... %1%</source>
+        <translation>Écriture... %1%</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="895"/>
+        <source>All existing data on &apos;%1&apos; will be erased.&lt;br&gt;Are you sure you want to continue?</source>
+        <translation>Toutes les données sur le stockage &apos;%1&apos; vont être supprimées.&lt;br&gt;Êtes-vous sûr de vouloir continuer ?</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="947"/>
+        <source>Error downloading OS list from Internet</source>
+        <translation>Erreur lors du téléchargement de la liste des systèmes d&apos;exploitation à partir d&apos;Internet</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="991"/>
+        <source>Verifying... %1%</source>
+        <translation>Vérification... %1%</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="1014"/>
+        <source>Error</source>
+        <translation>Erreur</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="1021"/>
+        <source>Write Successful</source>
+        <translation>Écriture réussie</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="1023"/>
+        <source>&lt;b&gt;%1&lt;/b&gt; has been erased&lt;br&gt;&lt;br&gt;You can now remove the SD card from the reader</source>
+        <translation>&lt;b&gt;%1&lt;/b&gt; a bien été formaté&lt;br&gt;&lt;br&gt;Vous pouvez retirer la carte SD du lecteur</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="1030"/>
+        <source>&lt;b&gt;%1&lt;/b&gt; has been written to &lt;b&gt;%2&lt;/b&gt;&lt;br&gt;&lt;br&gt;You can now remove the SD card from the reader</source>
+        <translation>&lt;b&gt;%1&lt;/b&gt; a bien été écrit sur &lt;b&gt;%2&lt;/b&gt;&lt;br&gt;&lt;br&gt;Vous pouvez retirer la carte SD du lecteur</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="1098"/>
+        <source>Error parsing os_list.json</source>
+        <translation>Erreur de lecture du fichier os_list.json</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="1271"/>
+        <source>Connect an USB stick containing images first.&lt;br&gt;The images must be located in the root folder of the USB stick.</source>
+        <translation>Connectez en premier une clé USB contenant les images.&lt;br&gt;Les images doivent se trouver dans le dossier racine de la clé USB.</translation>
     </message>
 </context>
 </TS>

@@ -917,7 +917,7 @@ ApplicationWindow {
         yesButton: true
         noButton: true
         title: qsTr("Are you sure you want to quit?")
-        text: qsTr("Raspberry Pi Imager is still busy.<br>Are you sure you want to quit?")
+        text: qsTr("Aliro-Ed Imager is still busy.<br>Are you sure you want to quit?")
         onYes: {
             Qt.quit()
         }

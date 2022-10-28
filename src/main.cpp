@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
     app.setOrganizationName("Aliro-Ed"); //TODO: ask what name we should put here
     app.setOrganizationDomain("raspberrypi.org"); //TODO: ask what domain to use
     app.setApplicationName("Imager");
-    app.setWindowIcon(QIcon(":/icons/rpi-imager.ico"));
+    app.setWindowIcon(QIcon(":/icons/aliro-imager.ico"));
     ImageWriter imageWriter;
 //    NetworkAccessManagerFactory namf;
     QQmlApplicationEngine engine;
@@ -228,7 +228,7 @@ int main(int argc, char *argv[])
         QLocale::setDefault(QLocale(langcode));
 #endif
 
-        if (translator->load(QLocale(), "rpi-imager", "_", QLatin1String(":/i18n")))
+        if (translator->load(QLocale(), "aliro-imager", "_", QLatin1String(":/i18n")))
             imageWriter.replaceTranslator(translator);
         else
             delete translator;

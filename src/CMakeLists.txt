@@ -99,7 +99,7 @@ if (Qt5Widgets_FOUND)
     set(EXTRALIBS ${EXTRALIBS} Qt5::Widgets)
 endif()
 
-qt5_add_translation(QM_FILES i18n/rpi-imager_en.ts i18n/rpi-imager_nl.ts i18n/rpi-imager_zh.ts i18n/rpi-imager_tr.ts i18n/rpi-imager_fr.ts i18n/rpi-imager_de.ts i18n/rpi-imager_sk.ts i18n/rpi-imager_it.ts i18n/rpi-imager_ca.ts i18n/rpi-imager_sl.ts i18n/rpi-imager_ko.ts i18n/rpi-imager_ja.ts)
+qt5_add_translation(QM_FILES i18n/aliro-imager_en.ts i18n/aliro-imager_nl.ts i18n/aliro-imager_zh.ts i18n/aliro-imager_tr.ts i18n/aliro-imager_fr.ts i18n/aliro-imager_de.ts i18n/aliro-imager_sk.ts i18n/aliro-imager_it.ts i18n/aliro-imager_ca.ts i18n/aliro-imager_sl.ts i18n/aliro-imager_ko.ts i18n/aliro-imager_ja.ts)
 configure_file(i18n/translations.qrc "${CMAKE_CURRENT_BINARY_DIR}" COPYONLY)
 set(SOURCES ${SOURCES} ${CMAKE_CURRENT_BINARY_DIR}/translations.qrc ${QM_FILES})
 
@@ -185,18 +185,27 @@ if (WIN32)
         COMMAND ${CMAKE_STRIP} "${CMAKE_BINARY_DIR}/${PROJECT_NAME}.exe")
 
     # Code signing
-    #find_program(SIGNTOOL "signtool.exe" PATHS "c:/Program Files (x86)/Microsoft SDKs/ClickOnce/SignTool")
-    #if (NOT SIGNTOOL)
-    #    message(FATAL_ERROR "Unable to locate signtool.exe used for code signing")
-    #endif()
+#    find_program(SIGNTOOL "signtool.exe" PATHS "c:/Program Files (x86)/Microsoft SDKs/ClickOnce/SignTool")
+    find_program(SIGNTOOL "signtool.exe" PATHS "C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x86")
+    if (NOT SIGNTOOL)
+        message(FATAL_ERROR "Unable to locate signtool.exe used for code signing")
+    endif()
 
-    #add_custom_command(TARGET ${PROJECT_NAME}
-    #    POST_BUILD
-    #    COMMAND "${SIGNTOOL}" sign /tr http://timestamp.digicert.com /td sha256 /fd sha256 /a "${CMAKE_BINARY_DIR}/${PROJECT_NAME}.exe")
+    add_custom_command(TARGET ${PROJECT_NAME}
+        POST_BUILD
+#        COMMAND "${SIGNTOOL}" sign /debug /tr http://timestamp.digicert.com /td sha256 /fd sha256 /a "${CMAKE_BINARY_DIR}/${PROJECT_NAME}.exe")
+        COMMAND "${SIGNTOOL}" sign /debug /tr http://timestamp.digicert.com /td sha384 /fd sha384 /a "${CMAKE_BINARY_DIR}/${PROJECT_NAME}.exe")
 
-    #add_custom_command(TARGET ${PROJECT_NAME}
-    #    POST_BUILD
-    #    COMMAND "${SIGNTOOL}" sign /tr http://timestamp.digicert.com /td sha256 /fd sha256 /a "${CMAKE_BINARY_DIR}/dependencies/fat32format/fat32format.exe")
+    add_custom_command(TARGET ${PROJECT_NAME}
+        POST_BUILD
+#        COMMAND "${SIGNTOOL}" sign /tr http://timestamp.digicert.com /td sha256 /fd sha256 /a "${CMAKE_BINARY_DIR}/dependencies/fat32format/fat32format.exe")
+        COMMAND "${SIGNTOOL}" sign /tr http://timestamp.digicert.com /td sha384 /fd sha384 /a "${CMAKE_BINARY_DIR}/dependencies/fat32format/fat32format.exe")
+
+    # Windeploy
+
+    add_custom_command(TARGET ${PROJECT_NAME}
+        POST_BUILD
+        COMMAND "${SIGNTOOL}" sign /tr http://timestamp.digicert.com /td sha256 /fd sha256 /a "${CMAKE_BINARY_DIR}/dependencies/fat32format/fat32format.exe")
 
     # Windeploy
     find_program(WINDEPLOYQT "windeployqt.exe" PATHS "${Qt5_DIR}/../../../bin")

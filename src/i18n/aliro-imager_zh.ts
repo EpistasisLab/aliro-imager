@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="sk_SK">
+<TS version="2.1" language="zh_CN">
 <context>
     <name>DownloadExtractThread</name>
     <message>
         <location filename="../downloadextractthread.cpp" line="171"/>
         <source>Error writing to storage</source>
-        <translation>Chyba pri zápise na úložisko</translation>
+        <translation>写入时出错</translation>
     </message>
     <message>
         <location filename="../downloadextractthread.cpp" line="197"/>
         <location filename="../downloadextractthread.cpp" line="386"/>
         <source>Error extracting archive: %1</source>
-        <translation>Chyba pri rozbaľovaní archívu: %1</translation>
+        <translation>解压 %1 时出错</translation>
     </message>
     <message>
         <location filename="../downloadextractthread.cpp" line="262"/>
         <source>Error mounting FAT32 partition</source>
-        <translation>Chyba pri pripájaní partície FAT32</translation>
+        <translation>挂载FAT32分区错误</translation>
     </message>
     <message>
         <location filename="../downloadextractthread.cpp" line="282"/>
         <source>Operating system did not mount FAT32 partition</source>
-        <translation>Operačný systém nepripojil partíciu FAT32</translation>
+        <translation>操作系统未能挂载FAT32分区</translation>
     </message>
     <message>
         <location filename="../downloadextractthread.cpp" line="305"/>
         <source>Error changing to directory &apos;%1&apos;</source>
-        <translation>Chyba pri vstupe do adresára &apos;%1&apos;</translation>
+        <translation>进入文件夹 “%1” 错误</translation>
     </message>
 </context>
 <context>
@@ -35,162 +35,162 @@
     <message>
         <location filename="../downloadthread.cpp" line="147"/>
         <source>Error running diskpart: %1</source>
-        <translation>Chyba počas behu diskpart: %1</translation>
+        <translation>运行 “diskpart” 命令错误 %1</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="168"/>
         <source>Error removing existing partitions</source>
-        <translation>Chyba pri odstraňovaní existujúcich partiícií</translation>
+        <translation>删除现有分区时出错</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="194"/>
         <source>Authentication cancelled</source>
-        <translation>Zrušená autentifikácia</translation>
+        <translation>认证已取消</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="197"/>
         <source>Error running authopen to gain access to disk device &apos;%1&apos;</source>
-        <translation>Chyba pri spúšťaní authopen v snahe o získanie prístupu na diskové zariadenie &apos;%1&apos;</translation>
+        <translation>运行authopen以获得对磁盘设备&apos;%1&apos;的访问权限时出错</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="198"/>
-        <source>Please verify if &apos;Raspberry Pi Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
-        <translation>Preverte, prosím, či má &apos;Raspberry Pi Imager&apos; prístup k &apos;vymeniteľným nosičom&apos; v nastaveniach súkromia (pod &apos;súbormi a priečinkami&apos;, prípadne mu udeľte &apos;plný prístup k diskom&apos;).</translation>
+        <source>Please verify if &apos;Aliro-Ed Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
+        <translation>请验证是否在隐私设置中允许“ Aliro-Ed Imager”访问“可移动卷”（在“文件和文件夹”下，或者为它提供“完全磁盘访问”）的权限。</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="220"/>
         <source>Cannot open storage device &apos;%1&apos;.</source>
-        <translation>Nepodarilo sa otvoriť zariadenie úložiska &apos;%1&apos;.</translation>
+        <translation>无法打开存储设备&apos;%1&apos;。</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="262"/>
         <source>discarding existing data on drive</source>
-        <translation>odstraňujem existujúce údaje z disku</translation>
+        <translation>删除现有数据</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="282"/>
         <source>zeroing out first and last MB of drive</source>
-        <translation>prepisujem prvý a posledny megabajt disku</translation>
+        <translation>清空驱动器未使用的数据</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="288"/>
         <source>Write error while zero&apos;ing out MBR</source>
-        <translation>Chyba zápisu pri prepisovaní MBR nulami</translation>
+        <translation>将MBR清零时写入错误</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="779"/>
         <source>Error reading from storage.&lt;br&gt;SD card may be broken.</source>
-        <translation>Chyba pri čítaní z úložiska.&lt;br&gt;Karta SD môže byť poškodená.</translation>
+        <translation>从存储读取数据时错误。&lt;br&gt;SD卡可能已损坏。</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="855"/>
         <source>Waiting for FAT partition to be mounted</source>
-        <translation>Čakám a pripojenie FAT partície</translation>
+        <translation>等待FAT分区挂载</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="941"/>
         <source>Error mounting FAT32 partition</source>
-        <translation>Chyba pri pripájaní partície FAT32</translation>
+        <translation>挂载FAT32分区错误</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="963"/>
         <source>Operating system did not mount FAT32 partition</source>
-        <translation>Operačný systém nepripojil partíciu FAT32</translation>
+        <translation>操作系统未能挂载FAT32分区</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="996"/>
         <source>Unable to customize. File &apos;%1&apos; does not exist.</source>
-        <translation>Prispôsobenie skončilo s chybou. Súbor &apos;%1&apos; neexistuje.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="1000"/>
         <source>Customizing image</source>
-        <translation>Upravujem obraz</translation>
+        <translation>使用自定义镜像</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="1085"/>
         <source>Error creating firstrun.sh on FAT partition</source>
-        <translation>Pri vytváraní firstrun.sh na partícii FAT nastala chyba</translation>
+        <translation>在FAT分区上创建firstrun.sh脚本文件时出错</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="1037"/>
         <source>Error writing to config.txt on FAT partition</source>
-        <translation>Chyba pri zápise config.txt na FAT partícii</translation>
+        <translation>在FAT分区上写入config.txt时出错</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="1102"/>
         <source>Error creating user-data cloudinit file on FAT partition</source>
-        <translation>Chyba pri vytváraní súboru cloudinit s údajmi používateľa na partícií FAT</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="1116"/>
         <source>Error creating network-config cloudinit file on FAT partition</source>
-        <translation>Chyba pri vytváraní súboru cloudinit s nastavením siete na partícií FAT</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="1139"/>
         <source>Error writing to cmdline.txt on FAT partition</source>
-        <translation>Chyba pri zápise cmdline.txt na FAT partíciu</translation>
+        <translation>在FAT分区上写入cmdline.txt时出错</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="432"/>
         <source>Access denied error while writing file to disk.</source>
-        <translation>Odopretý prístup pri zápise súboru na disk.</translation>
+        <translation>将文件写入磁盘时访问被拒绝。</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="437"/>
-        <source>Controlled Folder Access seems to be enabled. Please add both rpi-imager.exe and fat32format.exe to the list of allowed apps and try again.</source>
-        <translation>Vyzerá, že máte zapnutý Controlled Folder Access. Pridajte, prosím, rpi-imager.exe a fat32format.exe do zoznamu povolených aplikácií a skúste to znovu.</translation>
+        <source>Controlled Folder Access seems to be enabled. Please add both aliro-imager.exe and fat32format.exe to the list of allowed apps and try again.</source>
+        <translation>受控文件夹访问似乎已启用。 请将aliro-imager.exe和fat32format.exe都添加到允许的应用程序列表中，然后重试。</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="444"/>
         <source>Error writing file to disk</source>
-        <translation>Chyba pri zápise na disk</translation>
+        <translation>将文件写入磁盘时出错</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="463"/>
         <source>Error downloading: %1</source>
-        <translation>Chyba pri sťahovaní: %1</translation>
+        <translation>下载文件错误，已下载：%1</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="686"/>
         <source>Error writing to storage (while flushing)</source>
-        <translation>Chyba pri zápise na úložisko (počas volania flush)</translation>
+        <translation>刷写存储时出错</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="693"/>
         <source>Error writing to storage (while fsync)</source>
-        <translation>Chyba pri zápise na úložisko (počas volania fsync)</translation>
+        <translation>在fsync时写入存储时出错</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="674"/>
         <source>Download corrupt. Hash does not match</source>
-        <translation>Stiahnutý súbor je poškodený. Kontrolný súčet nesedí</translation>
+        <translation>下载的文件损坏。 哈希值不匹配</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="114"/>
         <source>opening drive</source>
-        <translation>otváram disk</translation>
+        <translation>打开驱动器</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="300"/>
         <source>Write error while trying to zero out last part of card.&lt;br&gt;Card could be advertising wrong capacity (possible counterfeit).</source>
-        <translation>Chyba zápisu pri prepisovaní poslednej časti karty nulami.&lt;br&gt;Karta pravdepodobne udáva nesprávnu kapacitu (a môže byť falošná).</translation>
+        <translation>写入镜像失败&lt;br&gt;SD卡可能损坏。</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="389"/>
         <source>starting download</source>
-        <translation>začína sťahovanie</translation>
+        <translation>开始下载</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="719"/>
         <source>Error writing first block (partition table)</source>
-        <translation>Chyba pri zápise prvého bloku (tabuľky partícií)</translation>
+        <translation>写入第一个块（分区表）时出错</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="798"/>
         <source>Verifying write failed. Contents of SD card is different from what was written to it.</source>
-        <translation>Overovanie zápisu skončilo s chybou. Obsah karty SD sa nezhoduje s tým, čo na ňu bolo zapísané.</translation>
+        <translation>验证写入失败。 SD卡的内容与写入的内容不同。</translation>
     </message>
 </context>
 <context>
@@ -200,57 +200,57 @@
         <location filename="../driveformatthread.cpp" line="124"/>
         <location filename="../driveformatthread.cpp" line="185"/>
         <source>Error partitioning: %1</source>
-        <translation>Chyba pri zápise partícií: %1</translation>
+        <translation>错误分区：%1</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="84"/>
         <source>Error starting fat32format</source>
-        <translation>Chyba pri spustení fat32format</translation>
+        <translation>启动fat32format命令时出错</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="94"/>
         <source>Error running fat32format: %1</source>
-        <translation>Chyba pri spustení fat32format: %1</translation>
+        <translation>运行fat32format时出错：%1</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="104"/>
         <source>Error determining new drive letter</source>
-        <translation>Chyba pri zisťovaní písmena nového disku</translation>
+        <translation>确定新驱动器号时出错</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="109"/>
         <source>Invalid device: %1</source>
-        <translation>Neplatné zariadenie: %1</translation>
+        <translation>无效的设备：%1</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="146"/>
         <source>Error formatting (through udisks2)</source>
-        <translation>Chyba pri formátovaní (pomocou udisks2)</translation>
+        <translation>格式化错误</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="174"/>
         <source>Error starting sfdisk</source>
-        <translation>Chyba pri spustení sfdisk</translation>
+        <translation>启动sfdisk命令时出错</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="199"/>
         <source>Partitioning did not create expected FAT partition %1</source>
-        <translation>Rozdelenie disku nevytvorilo očakávanú FAT partíciu %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="208"/>
         <source>Error starting mkfs.fat</source>
-        <translation>Chyba pri spustení mkfs.fat</translation>
+        <translation>启动mkfs.fat时出错</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="218"/>
         <source>Error running mkfs.fat: %1</source>
-        <translation>Chyba pri spustení mkfs.fat: %1</translation>
+        <translation>运行mkfs.fat时出错：%1</translation>
     </message>
     <message>
         <location filename="../driveformatthread.cpp" line="225"/>
         <source>Formatting not implemented for this platform</source>
-        <translation>Formátovanie nie je na tejto platforme implementované</translation>
+        <translation>暂不支持此平台的格式化</translation>
     </message>
 </context>
 <context>
@@ -258,27 +258,27 @@
     <message>
         <location filename="../imagewriter.cpp" line="257"/>
         <source>Storage capacity is not large enough.&lt;br&gt;Needs to be at least %1 GB.</source>
-        <translation>Kapacita úložiska je nedostatočná&lt;br&gt;Musí byť aspoň %1 GB.</translation>
+        <translation>存储容量不足。&lt;br&gt;至少需要%1 GB的空白空间.</translation>
     </message>
     <message>
         <location filename="../imagewriter.cpp" line="263"/>
         <source>Input file is not a valid disk image.&lt;br&gt;File size %1 bytes is not a multiple of 512 bytes.</source>
-        <translation>Vstupný súbor nie je platným obrazom disku.&lt;br&gt;Veľkosť súboru %1 bajtov nie je násobkom 512 bajtov.</translation>
+        <translation>输入文件不是有效的磁盘映像。&lt;br&gt;文件大小%1字节不是512字节的倍数。</translation>
     </message>
     <message>
         <location filename="../imagewriter.cpp" line="445"/>
         <source>Downloading and writing image</source>
-        <translation>Sťahujem a zapisujem obraz</translation>
+        <translation>下载和写入镜像</translation>
     </message>
     <message>
         <location filename="../imagewriter.cpp" line="578"/>
         <source>Select image</source>
-        <translation>Vyberte obraz</translation>
+        <translation>选择镜像</translation>
     </message>
     <message>
         <location filename="../imagewriter.cpp" line="979"/>
         <source>Would you like to prefill the wifi password from the system keychain?</source>
-        <translation>Chcete predvyplniť heslo pre wifi zo systémovej kľúčenky?</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -286,12 +286,12 @@
     <message>
         <location filename="../localfileextractthread.cpp" line="34"/>
         <source>opening image file</source>
-        <translation>otváram súbor s obrazom</translation>
+        <translation>导入系统镜像</translation>
     </message>
     <message>
         <location filename="../localfileextractthread.cpp" line="39"/>
         <source>Error opening image file</source>
-        <translation>Chyba pri otváraní súboru s obrazom</translation>
+        <translation>打开图像文件时出错</translation>
     </message>
 </context>
 <context>
@@ -299,22 +299,22 @@
     <message>
         <location filename="../MsgPopup.qml" line="98"/>
         <source>NO</source>
-        <translation>NIE</translation>
+        <translation>不</translation>
     </message>
     <message>
         <location filename="../MsgPopup.qml" line="109"/>
         <source>YES</source>
-        <translation>ÁNO</translation>
+        <translation>是</translation>
     </message>
     <message>
         <location filename="../MsgPopup.qml" line="120"/>
         <source>CONTINUE</source>
-        <translation>POKRAČOVAŤ</translation>
+        <translation>继续</translation>
     </message>
     <message>
         <location filename="../MsgPopup.qml" line="130"/>
         <source>QUIT</source>
-        <translation>UKONČIŤ</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -322,144 +322,140 @@
     <message>
         <location filename="../OptionsPopup.qml" line="79"/>
         <source>Advanced options</source>
-        <translation>Pokročilé možnosti</translation>
+        <translation>高级设置</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="96"/>
         <source>Image customization options</source>
-        <translation>Možnosti úprav obrazu</translation>
+        <translation>镜像自定义选项</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="104"/>
         <source>for this session only</source>
-        <translation>iba pre toto sedenie</translation>
+        <translation>仅限本次</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="105"/>
         <source>to always use</source>
-        <translation>použiť vždy</translation>
+        <translation>永久保存</translation>
     </message>
     <message>
         <source>Disable overscan</source>
-        <translation type="vanished">Vypnúť presnímanie (overscan)</translation>
+        <translation type="vanished">禁用扫描</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="119"/>
         <source>Set hostname:</source>
-        <translation>Nastaviť meno počítača (hostname):</translation>
+        <translation>设置主机名：</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="138"/>
         <source>Enable SSH</source>
-        <translation>Povoliť SSH</translation>
+        <translation>开启SSH服务</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="160"/>
         <source>Use password authentication</source>
-        <translation>Použiť heslo na prihlásenie</translation>
-    </message>
-    <message>
-        <source>Set password for &apos;pi&apos; user:</source>
-        <translation type="vanished">Nastaviť heslo pre používateľa &apos;pi&apos;:</translation>
+        <translation>使用密码登录</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="170"/>
         <source>Allow public-key authentication only</source>
-        <translation>Povoliť iba prihlásenie pomocou verejného kľúča</translation>
+        <translation>只允许使用公匙登录</translation>
     </message>
     <message>
-        <source>Set authorized_keys for &apos;pi&apos;:</source>
-        <translation type="vanished">Nastaviť authorized_keys pre &apos;pi&apos;:</translation>
+        <source>Set password for &apos;%1&apos; user:</source>
+        <translation type="vanished">设置&apos;%1&apos;用户的密码：</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="188"/>
         <source>Set authorized_keys for &apos;%1&apos;:</source>
-        <translation>Nastaviť authorized_keys pre &apos;%1&apos;:</translation>
+        <translation>设置%1用户的登录密匙：</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="261"/>
         <source>Configure wireless LAN</source>
-        <translation>Nastaviť wifi</translation>
+        <translation>配置WiFi</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="280"/>
         <source>SSID:</source>
-        <translation>SSID:</translation>
+        <translation>热点名：</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="234"/>
         <location filename="../OptionsPopup.qml" line="300"/>
         <source>Password:</source>
-        <translation>Heslo:</translation>
+        <translation>密码：</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="200"/>
         <source>Set username and password</source>
-        <translation>Nastaviť meno používateľa a heslo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="219"/>
         <source>Username:</source>
-        <translation>Meno používateľa:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="295"/>
         <source>Hidden SSID</source>
-        <translation>Skryté SSID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="316"/>
         <source>Show password</source>
-        <translation>Zobraziť heslo</translation>
+        <translation>显示密码</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="321"/>
         <source>Wireless LAN country:</source>
-        <translation>Wifi krajina:</translation>
+        <translation>WIFI国家：</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="332"/>
         <source>Set locale settings</source>
-        <translation>Nastavenia miestnych zvyklostí</translation>
+        <translation>语言设置</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="342"/>
         <source>Time zone:</source>
-        <translation>Časové pásmo:</translation>
+        <translation>时区：</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="352"/>
         <source>Keyboard layout:</source>
-        <translation>Rozloženie klávesnice:</translation>
+        <translation>键盘布局：</translation>
     </message>
     <message>
         <source>Skip first-run wizard</source>
-        <translation type="vanished">Vypnúť sprievodcu prvým spustením</translation>
+        <translation type="vanished">跳过首次启动向导</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="365"/>
         <source>Persistent settings</source>
-        <translation>Trvalé nastavenia</translation>
+        <translation>永久设置</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="373"/>
         <source>Play sound when finished</source>
-        <translation>Po skončení prehrať zvuk</translation>
+        <translation>完成后播放提示音</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="377"/>
         <source>Eject media when finished</source>
-        <translation>Po skončení vysunúť médium</translation>
+        <translation>完成后弹出磁盘</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="381"/>
         <source>Enable telemetry</source>
-        <translation>Povoliť telemetriu</translation>
+        <translation>启用遥测</translation>
     </message>
     <message>
         <location filename="../OptionsPopup.qml" line="394"/>
         <source>SAVE</source>
-        <translation>ULOŽIŤ</translation>
+        <translation>保存</translation>
     </message>
 </context>
 <context>
@@ -467,7 +463,7 @@
     <message>
         <location filename="../linux/linuxdrivelist.cpp" line="111"/>
         <source>Internal SD card reader</source>
-        <translation>Interná čítačka SD kariet</translation>
+        <translation>内置SD卡读卡器</translation>
     </message>
 </context>
 <context>
@@ -475,287 +471,295 @@
     <message>
         <location filename="../UseSavedSettingsPopup.qml" line="72"/>
         <source>Warning: advanced settings set</source>
-        <translation>Varovanie: používajú sa pokročilé možnosti</translation>
+        <translation>警告：高级设置已设置</translation>
     </message>
     <message>
         <location filename="../UseSavedSettingsPopup.qml" line="86"/>
         <source>Would you like to apply the image customization settings saved earlier?</source>
-        <translation>Chcete použiť uložené nastavenia úprav obrazu?</translation>
+        <translation>您要应用之前保存的自定义镜像设置吗？</translation>
     </message>
     <message>
         <location filename="../UseSavedSettingsPopup.qml" line="95"/>
         <source>NO, CLEAR SETTINGS</source>
-        <translation>NIE, VYČISTIŤ NASTAVENIA</translation>
+        <translation>清空所有设置</translation>
     </message>
     <message>
         <location filename="../UseSavedSettingsPopup.qml" line="105"/>
         <source>YES</source>
-        <translation>ÁNO</translation>
+        <translation>是</translation>
     </message>
     <message>
         <location filename="../UseSavedSettingsPopup.qml" line="115"/>
         <source>EDIT SETTINGS</source>
-        <translation>UPRAVIŤ NASTAVENIA</translation>
+        <translation>编辑设置</translation>
     </message>
 </context>
 <context>
     <name>main</name>
     <message>
         <location filename="../main.qml" line="24"/>
-        <source>Raspberry Pi Imager v%1</source>
-        <translation>Raspberry Pi Imager v%1</translation>
+        <source>Aliro-Ed Imager v%1</source>
+        <translation>树莓派镜像烧录器 v%1</translation>
     </message>
     <message>
         <location filename="../main.qml" line="862"/>
         <source>Are you sure you want to quit?</source>
-        <translation>Skutočne chcete skončiť?</translation>
+        <translation>你确定你要退出吗？</translation>
     </message>
     <message>
         <location filename="../main.qml" line="863"/>
-        <source>Raspberry Pi Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
-        <translation>Raspberry Pi Imager ešte neskončil.&lt;br&gt;Ste si istý, že chcete skončiť?</translation>
+        <source>Aliro-Ed Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
+        <translation>Aliro-Ed Imager还未完成任务。&lt;br&gt;您确定要退出吗？</translation>
     </message>
     <message>
         <location filename="../main.qml" line="99"/>
         <location filename="../main.qml" line="399"/>
         <source>Operating System</source>
-        <translation>Operačný systém</translation>
+        <translation>请选择需要写入的操作系统</translation>
     </message>
     <message>
         <location filename="../main.qml" line="111"/>
         <source>CHOOSE OS</source>
-        <translation>VYBERTE OS</translation>
+        <translation>选择操作系统</translation>
     </message>
     <message>
         <location filename="../main.qml" line="135"/>
         <location filename="../main.qml" line="713"/>
         <source>Storage</source>
-        <translation>SD karta</translation>
+        <translation>储存卡</translation>
     </message>
     <message>
         <location filename="../main.qml" line="147"/>
         <location filename="../main.qml" line="1038"/>
         <source>CHOOSE STORAGE</source>
-        <translation>VYBERTE SD KARTU</translation>
+        <translation>选择SD卡</translation>
+    </message>
+    <message>
+        <location filename="../main.qml" line="157"/>
+        <source>Select this button to change the destination storage device</source>
+        <translation>选择此按钮以更改目标存储设备</translation>
     </message>
     <message>
         <location filename="../main.qml" line="173"/>
         <source>WRITE</source>
-        <translation>ZAPÍSAŤ</translation>
+        <translation>烧录</translation>
     </message>
     <message>
         <location filename="../main.qml" line="968"/>
         <source>Writing... %1%</source>
-        <translation>Zapisujem... %1%</translation>
+        <translation>写入中...%1%</translation>
     </message>
     <message>
         <location filename="../main.qml" line="218"/>
         <source>CANCEL WRITE</source>
-        <translation>ZRUŠIŤ ZÁPIS</translation>
+        <translation>取消写入</translation>
     </message>
     <message>
         <location filename="../main.qml" line="123"/>
         <source>Select this button to change the operating system</source>
-        <translation>Pre zmenu operačného systému kliknite na toto tlačidlo</translation>
+        <translation>更改操作系统</translation>
     </message>
     <message>
         <source>Select this button to change the destination SD card</source>
-        <translation type="vanished">Pre zmenu cieľovej SD karty kliknite na toto tlačidlo</translation>
+        <translation type="vanished">更改目标SD卡</translation>
     </message>
     <message>
         <location filename="../main.qml" line="177"/>
         <source>Select this button to start writing the image</source>
-        <translation>Kliknutím na toto tlačidlo spustíte zápis</translation>
+        <translation>开始写入</translation>
     </message>
     <message>
         <location filename="../main.qml" line="221"/>
         <location filename="../main.qml" line="965"/>
         <source>Cancelling...</source>
-        <translation>Ruším operáciu...</translation>
+        <translation>取消...</translation>
     </message>
     <message>
         <location filename="../main.qml" line="229"/>
         <source>CANCEL VERIFY</source>
-        <translation>ZRUŠIŤ OVEROVANIE</translation>
+        <translation>取消验证</translation>
     </message>
     <message>
         <location filename="../main.qml" line="232"/>
         <location filename="../main.qml" line="988"/>
         <location filename="../main.qml" line="1057"/>
         <source>Finalizing...</source>
-        <translation>Ukončujem...</translation>
+        <translation>正在完成...</translation>
     </message>
     <message>
         <location filename="../main.qml" line="247"/>
         <source>Select this button to access advanced settings</source>
-        <translation>Použite toto tlačidlo na prístup k pokročilým nastaveniam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.qml" line="261"/>
         <source>Using custom repository: %1</source>
-        <translation>Používa sa vlastný repozitár: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.qml" line="270"/>
         <source>Keyboard navigation: &lt;tab&gt; navigate to next button &lt;space&gt; press button/select item &lt;arrow up/down&gt; go up/down in lists</source>
-        <translation>Ovládanie pomocou klávesnice: &lt;tabulátor&gt; prechod na ďalšie tlačidlo &lt;medzerník&gt; stlačenie tlačidla/výber položky &lt;šípka hore/dole&gt; posun hore/dole v zoznamoch</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.qml" line="290"/>
         <source>Language: </source>
-        <translation>Jazyk:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.qml" line="313"/>
         <source>Keyboard: </source>
-        <translation>Klávesnica: </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.qml" line="505"/>
         <location filename="../main.qml" line="1022"/>
         <source>Erase</source>
-        <translation>Vymazať</translation>
+        <translation>擦除</translation>
     </message>
     <message>
         <location filename="../main.qml" line="506"/>
         <source>Format card as FAT32</source>
-        <translation>Formátovať kartu ako FAT32</translation>
+        <translation>将SD卡格式化为FAT32格式</translation>
     </message>
     <message>
         <location filename="../main.qml" line="515"/>
         <source>Use custom</source>
-        <translation>Použiť vlastný</translation>
+        <translation>使用自定义镜像</translation>
     </message>
     <message>
         <location filename="../main.qml" line="516"/>
         <source>Select a custom .img from your computer</source>
-        <translation>Použiť vlastný súbor img. na Vašom počítači</translation>
+        <translation>使用下载的系统镜像文件烧录</translation>
     </message>
     <message>
         <location filename="../main.qml" line="640"/>
         <source>Local file</source>
-        <translation>Miestny súbor</translation>
+        <translation>本地文件</translation>
     </message>
     <message>
         <location filename="../main.qml" line="820"/>
         <source>[WRITE PROTECTED]</source>
-        <translation>[OCHRANA PROTI ZÁPISU]</translation>
+        <translation>[写保护]</translation>
     </message>
     <message>
         <location filename="../main.qml" line="874"/>
         <source>Warning</source>
-        <translation>Varovanie</translation>
+        <translation>警告</translation>
     </message>
     <message>
         <location filename="../main.qml" line="882"/>
         <source>Preparing to write...</source>
-        <translation>Príprava zápisu...</translation>
+        <translation>准备写入...</translation>
     </message>
     <message>
         <location filename="../main.qml" line="895"/>
         <source>All existing data on &apos;%1&apos; will be erased.&lt;br&gt;Are you sure you want to continue?</source>
-        <translation>Všetky existujúce dáta na &apos;%1&apos; budú odstránené.&lt;br&gt;Naozaj chcete pokračovať?</translation>
+        <translation>&apos;%1&apos;上的所有现有数据将被删除。&lt;br&gt;确定要继续吗？</translation>
     </message>
     <message>
         <location filename="../main.qml" line="906"/>
         <source>Update available</source>
-        <translation>Je dostupná aktualizácia</translation>
+        <translation>检测到更新</translation>
     </message>
     <message>
         <location filename="../main.qml" line="907"/>
         <source>There is a newer version of Imager available.&lt;br&gt;Would you like to visit the website to download it?</source>
-        <translation>Je dostupná nová verzia Imagera.&lt;br&gt;Chcete prejsť na webovú stránku s programom a stiahnuť ho?</translation>
+        <translation>有较新版本的aliro-imager。&lt;br&gt;需要下载更新吗？</translation>
     </message>
     <message>
         <location filename="../main.qml" line="998"/>
         <source>Preparing to write... (%1)</source>
-        <translation>Príprava zápisu... (%1)</translation>
+        <translation>写入中 (%1)</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1023"/>
         <source>&lt;b&gt;%1&lt;/b&gt; has been erased&lt;br&gt;&lt;br&gt;You can now remove the SD card from the reader</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; bola vymazaná&lt;br&gt;&lt;br&gt;Teraz môžete odstrániť SD kartu z čítačky</translation>
+        <translation>&lt;b&gt;%1 &lt;/ b&gt;已被删除&lt;br&gt; &lt;br&gt;您现在可以从读取器中取出SD卡</translation>
     </message>
     <message>
         <source>&lt;b&gt;%1&lt;/b&gt; has been written to &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation type="vanished">&lt;b&gt;%1&lt;/b&gt; bol zapísaný na &lt;b&gt;%2&lt;/b&gt;</translation>
+        <translation type="vanished">&lt;b&gt;%1&lt;/b&gt; 已经成功烧录到 &lt;b&gt;%2&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1098"/>
         <source>Error parsing os_list.json</source>
-        <translation>Chyba pri spracovaní os_list.json</translation>
+        <translation>解析 os_list.json 错误</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1271"/>
         <source>Connect an USB stick containing images first.&lt;br&gt;The images must be located in the root folder of the USB stick.</source>
-        <translation>Najprv pripojte USB kľúč, ktorý obsahuje diskové obrazy.&lt;br&gt;Obrazy sa musia nachádzať v koreňovom priečinku USB kľúča.</translation>
+        <translation>连接包含镜像的U盘。&lt;br&gt;镜像必须位于U盘的根文件夹中。</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1287"/>
         <source>SD card is write protected.&lt;br&gt;Push the lock switch on the left side of the card upwards, and try again.</source>
-        <translation>SD karta je chránená proti zápisu.&lt;br&gt;Presuňte prepínač zámku na ľavej strane karty smerom hore a skúste to znova.</translation>
+        <translation>SD卡具有写保护。&lt;br&gt;尝试向上推SD卡的左侧的锁定开关，然后重试。</translation>
     </message>
     <message>
         <location filename="../main.qml" line="461"/>
         <source>Back</source>
-        <translation>Späť</translation>
-    </message>
-    <message>
-        <location filename="../main.qml" line="157"/>
-        <source>Select this button to change the destination storage device</source>
-        <translation>Pre zmenu cieľového zariadenia úložiska kliknite na toto tlačidlo</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <location filename="../main.qml" line="462"/>
         <source>Go back to main menu</source>
-        <translation>Prejsť do hlavnej ponuky</translation>
+        <translation>回到主页</translation>
     </message>
     <message>
         <location filename="../main.qml" line="628"/>
         <source>Released: %1</source>
-        <translation>Vydané: %1</translation>
+        <translation>发布时间：%1</translation>
     </message>
     <message>
         <location filename="../main.qml" line="638"/>
         <source>Cached on your computer</source>
-        <translation>Uložené na počítači</translation>
+        <translation>缓存在本地磁盘里</translation>
     </message>
     <message>
         <location filename="../main.qml" line="641"/>
         <source>Online - %1 GB download</source>
-        <translation>Online %1 GB na stiahnutie</translation>
+        <translation>需要下载：%1 GB</translation>
     </message>
     <message>
         <location filename="../main.qml" line="766"/>
         <location filename="../main.qml" line="818"/>
         <location filename="../main.qml" line="824"/>
         <source>Mounted as %1</source>
-        <translation>Pripojená ako %1</translation>
+        <translation>挂载到：%1 上</translation>
+    </message>
+    <message>
+        <source>QUIT APP</source>
+        <translation type="vanished">退出</translation>
+    </message>
+    <message>
+        <source>CONTINUE</source>
+        <translation type="vanished">继续</translation>
     </message>
     <message>
         <location filename="../main.qml" line="947"/>
         <source>Error downloading OS list from Internet</source>
-        <translation>Chyba pri sťahovaní zoznamu OS z Internetu</translation>
+        <translation>下载镜像列表错误</translation>
     </message>
     <message>
         <location filename="../main.qml" line="991"/>
         <source>Verifying... %1%</source>
-        <translation>Overujem... %1%</translation>
+        <translation>验证文件中...%1%</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1014"/>
         <source>Error</source>
-        <translation>Chyba</translation>
+        <translation>错误</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1021"/>
         <source>Write Successful</source>
-        <translation>Zápis úspešne skončil</translation>
+        <translation>烧录成功</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1030"/>
         <source>&lt;b&gt;%1&lt;/b&gt; has been written to &lt;b&gt;%2&lt;/b&gt;&lt;br&gt;&lt;br&gt;You can now remove the SD card from the reader</source>
-        <translation>&lt;b&gt;%1&lt;/b&gt; bol zapísaný na &lt;b&gt;%2&lt;/b&gt;&lt;br&gt;&lt;br&gt;Teraz môžete odstrániť SD kartu z čítačky</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt; 已经成功烧录到 &lt;b&gt;%2&lt;/b&gt;&lt;br&gt;&lt;br&gt;上了，你可以卸载SD卡了</translation>
     </message>
 </context>
 </TS>

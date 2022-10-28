@@ -619,7 +619,7 @@ IF(ZSTD_FOUND)
   SET(CMAKE_REQUIRED_LIBRARIES ${ZSTD_LIBRARY})
   SET(CMAKE_REQUIRED_INCLUDES ${ZSTD_INCLUDE_DIR})
   #CHECK_FUNCTION_EXISTS(ZSTD_compressStream HAVE_LIBZSTD)
-  # rpi-imager: cannot check since static lib is not build yet
+  # aliro-imager: cannot check since static lib is not build yet
   SET(HAVE_LIBZSTD 1)
 
   #
