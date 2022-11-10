@@ -54,8 +54,8 @@
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="198"/>
-        <source>Please verify if &apos;Aliro-Ed Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
-        <translation>Lütfen &apos;Aliro-Ed Imager&apos;ın gizlilik ayarlarında (&apos;dosyalar ve klasörler&apos; altında veya alternatif olarak &apos;tam disk erişimi&apos;) &apos;çıkarılabilir birimlere erişim&apos; izin verilip verilmediğini doğrulayın.</translation>
+        <source>Please verify if &apos;Aliro Ed Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
+        <translation>Lütfen &apos;Aliro Ed Imager&apos;ın gizlilik ayarlarında (&apos;dosyalar ve klasörler&apos; altında veya alternatif olarak &apos;tam disk erişimi&apos;) &apos;çıkarılabilir birimlere erişim&apos; izin verilip verilmediğini doğrulayın.</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="220"/>
@@ -486,8 +486,8 @@
     <name>main</name>
     <message>
         <location filename="../main.qml" line="24"/>
-        <source>Aliro-Ed Imager v%1</source>
-        <translation>Aliro-Ed Imaj Yöneticisi v%1</translation>
+        <source>Aliro Ed Imager v%1</source>
+        <translation>Aliro Ed Imaj Yöneticisi v%1</translation>
     </message>
     <message>
         <location filename="../main.qml" line="99"/>
@@ -655,8 +655,8 @@
     </message>
     <message>
         <location filename="../main.qml" line="863"/>
-        <source>Aliro-Ed Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
-        <translation>Aliro-Ed Imager hala meşgul.&lt;br&gt;Çıkmak istediğinizden emin misiniz?</translation>
+        <source>Aliro Ed Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
+        <translation>Aliro Ed Imager hala meşgul.&lt;br&gt;Çıkmak istediğinizden emin misiniz?</translation>
     </message>
     <message>
         <location filename="../main.qml" line="874"/>

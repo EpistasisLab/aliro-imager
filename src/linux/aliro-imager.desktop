@@ -2,7 +2,7 @@
 Type=Application
 Version=1.0
 Name=Imager
-Comment=Aliro-Ed Imager
+Comment=Aliro Ed Imager
 Icon=aliro-imager
 Exec=aliro-imager
 Categories=Utility

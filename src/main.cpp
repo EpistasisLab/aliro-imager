@@ -85,8 +85,8 @@ int main(int argc, char *argv[])
 #else
     QApplication app(argc, argv);
 #endif
-    app.setOrganizationName("Aliro-Ed"); //TODO: ask what name we should put here
-    app.setOrganizationDomain("raspberrypi.org"); //TODO: ask what domain to use
+    app.setOrganizationName("Cedars Sinai Medical Center");
+    app.setOrganizationDomain("aliro.ai");
     app.setApplicationName("Imager");
     app.setWindowIcon(QIcon(":/icons/aliro-imager.ico"));
     ImageWriter imageWriter;

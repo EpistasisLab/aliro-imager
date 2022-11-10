@@ -54,8 +54,8 @@
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="198"/>
-        <source>Please verify if &apos;Aliro-Ed Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
-        <translation>&apos;Aliro-Ed Imager&apos;가 개인 정보 설정(&apos;파일 및 폴더&apos;에서 또는 &apos;전체 디스크 액세스&apos;를 부여)에서 &apos;제거 가능한 볼륨&apos;에 액세스할 수 있는지 확인하세요.</translation>
+        <source>Please verify if &apos;Aliro Ed Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
+        <translation>&apos;Aliro Ed Imager&apos;가 개인 정보 설정(&apos;파일 및 폴더&apos;에서 또는 &apos;전체 디스크 액세스&apos;를 부여)에서 &apos;제거 가능한 볼륨&apos;에 액세스할 수 있는지 확인하세요.</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="220"/>
@@ -494,8 +494,8 @@
     <name>main</name>
     <message>
         <location filename="../main.qml" line="24"/>
-        <source>Aliro-Ed Imager v%1</source>
-        <translation>Aliro-Ed Imager v%1</translation>
+        <source>Aliro Ed Imager v%1</source>
+        <translation>Aliro Ed Imager v%1</translation>
     </message>
     <message>
         <location filename="../main.qml" line="99"/>
@@ -658,8 +658,8 @@
     </message>
     <message>
         <location filename="../main.qml" line="863"/>
-        <source>Aliro-Ed Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
-        <translation>Aliro-Ed Imager가 사용 중입니다.&lt;br&gt;정말 그만두시겠습니까?</translation>
+        <source>Aliro Ed Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
+        <translation>Aliro Ed Imager가 사용 중입니다.&lt;br&gt;정말 그만두시겠습니까?</translation>
     </message>
     <message>
         <location filename="../main.qml" line="874"/>
@@ -679,7 +679,7 @@
     <message>
         <location filename="../main.qml" line="907"/>
         <source>There is a newer version of Imager available.&lt;br&gt;Would you like to visit the website to download it?</source>
-        <translation>Aliro-Ed Imager의 최신 버전을 사용할 수 있습니다.&lt;br&gt;다운받기 위해 웹사이트를 방문하시겠습니까??</translation>
+        <translation>Aliro Ed Imager의 최신 버전을 사용할 수 있습니다.&lt;br&gt;다운받기 위해 웹사이트를 방문하시겠습니까??</translation>
     </message>
     <message>
         <location filename="../main.qml" line="968"/>

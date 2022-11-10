@@ -12,7 +12,7 @@ PRODUCTVERSION IMAGER_VERSION_CSV
         BLOCK "040904b0"
         {
             VALUE "CompanyName",     "Cedars-Sinai Medical Center"
-            VALUE "FileDescription", "Aliro-Ed Imager"
+            VALUE "FileDescription", "Aliro Ed Imager"
         }
     }
     BLOCK "VarFileInfo"

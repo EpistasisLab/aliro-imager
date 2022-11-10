@@ -54,8 +54,8 @@
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="198"/>
-        <source>Please verify if &apos;Aliro-Ed Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
-        <translation>Verifica se a &apos;Aliro-Ed Imager&apos; è consentito l&apos;accesso a &apos;volumi rimovibili&apos; nelle impostazioni privacy (in &apos;file e cartelle&apos; o in alternativa concedi &apos;accesso completo al disco&apos;).</translation>
+        <source>Please verify if &apos;Aliro Ed Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
+        <translation>Verifica se a &apos;Aliro Ed Imager&apos; è consentito l&apos;accesso a &apos;volumi rimovibili&apos; nelle impostazioni privacy (in &apos;file e cartelle&apos; o in alternativa concedi &apos;accesso completo al disco&apos;).</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="220"/>
@@ -503,8 +503,8 @@ Aggiungi sia &apos;aliro-imager.exe&apos; che &apos;fat32format.exe&apos; all&ap
     <name>main</name>
     <message>
         <location filename="../main.qml" line="24"/>
-        <source>Aliro-Ed Imager v%1</source>
-        <translation>Aliro-Ed Imager v. %1</translation>
+        <source>Aliro Ed Imager v%1</source>
+        <translation>Aliro Ed Imager v. %1</translation>
     </message>
     <message>
         <location filename="../main.qml" line="99"/>
@@ -671,8 +671,8 @@ Aggiungi sia &apos;aliro-imager.exe&apos; che &apos;fat32format.exe&apos; all&ap
     </message>
     <message>
         <location filename="../main.qml" line="863"/>
-        <source>Aliro-Ed Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
-        <translation>Aliro-Ed Image è occupato.&lt;br&gt;Sei sicuro di voler uscire?</translation>
+        <source>Aliro Ed Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
+        <translation>Aliro Ed Image è occupato.&lt;br&gt;Sei sicuro di voler uscire?</translation>
     </message>
     <message>
         <location filename="../main.qml" line="874"/>

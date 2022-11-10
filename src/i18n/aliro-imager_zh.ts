@@ -54,8 +54,8 @@
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="198"/>
-        <source>Please verify if &apos;Aliro-Ed Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
-        <translation>请验证是否在隐私设置中允许“ Aliro-Ed Imager”访问“可移动卷”（在“文件和文件夹”下，或者为它提供“完全磁盘访问”）的权限。</translation>
+        <source>Please verify if &apos;Aliro Ed Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
+        <translation>请验证是否在隐私设置中允许“ Aliro Ed Imager”访问“可移动卷”（在“文件和文件夹”下，或者为它提供“完全磁盘访问”）的权限。</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="220"/>
@@ -498,7 +498,7 @@
     <name>main</name>
     <message>
         <location filename="../main.qml" line="24"/>
-        <source>Aliro-Ed Imager v%1</source>
+        <source>Aliro Ed Imager v%1</source>
         <translation>树莓派镜像烧录器 v%1</translation>
     </message>
     <message>
@@ -508,8 +508,8 @@
     </message>
     <message>
         <location filename="../main.qml" line="863"/>
-        <source>Aliro-Ed Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
-        <translation>Aliro-Ed Imager还未完成任务。&lt;br&gt;您确定要退出吗？</translation>
+        <source>Aliro Ed Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
+        <translation>Aliro Ed Imager还未完成任务。&lt;br&gt;您确定要退出吗？</translation>
     </message>
     <message>
         <location filename="../main.qml" line="99"/>

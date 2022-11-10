@@ -4,12 +4,12 @@
 #              by Vlasis K. Barkas aka Red Wine red_wine@freemail.gr Sep 2006               
 ############################################################################################
 
-!define APP_NAME "Aliro-Ed Imager"
+!define APP_NAME "Aliro Ed Imager"
 !define COMP_NAME "Cedars-Sinai Medical Center"
 !define VERSION "@IMAGER_VERSION_STR@"
 !define INSTALLER_NAME "aliro-imager-${VERSION}.exe"
 !define COPYRIGHT "Cedars-Sinai Medical Center"
-!define DESCRIPTION "Aliro-Ed Imager"
+!define DESCRIPTION "Aliro Ed Imager"
 !define MAIN_APP_EXE "aliro-imager.exe"
 !define INSTALL_TYPE "SetShellVarContext current"
 !define REG_ROOT "HKCU"
@@ -37,7 +37,7 @@ OutFile "${INSTALLER_NAME}"
 BrandingText "${APP_NAME}"
 XPStyle on
 InstallDirRegKey "${REG_ROOT}" "${REG_APP_PATH}" ""
-InstallDir "$PROGRAMFILES\Aliro-Ed Imager"
+InstallDir "$PROGRAMFILES\Aliro Ed Imager"
 
 ######################################################################
 
@@ -88,7 +88,7 @@ InstallDir "$PROGRAMFILES\Aliro-Ed Imager"
 
 !ifdef REG_START_MENU
 !define MUI_STARTMENUPAGE_NODISABLE
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Aliro-Ed"
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Aliro Ed"
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT "${REG_ROOT}"
 !define MUI_STARTMENUPAGE_REGISTRY_KEY "${UNINSTALL_PATH}"
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME "${REG_START_MENU}"
@@ -114,14 +114,14 @@ InstallDir "$PROGRAMFILES\Aliro-Ed Imager"
 !insertmacro MUI_LANGUAGE "Dutch"
 !insertmacro MUI_LANGUAGE "Italian"
 
-LangString termMsg ${LANG_ENGLISH} "Aliro-Ed Imager seems to be running and busy.$\nDo you want to terminate process?"
-LangString stopMsg ${LANG_ENGLISH} "Stopping Aliro-Ed Imager"
+LangString termMsg ${LANG_ENGLISH} "Aliro Ed Imager seems to be running and busy.$\nDo you want to terminate process?"
+LangString stopMsg ${LANG_ENGLISH} "Stopping Aliro Ed Imager"
 LangString win7Msg ${LANG_ENGLISH} "Windows 7 or above required"
-LangString termMsg ${LANG_DUTCH} "Aliro-Ed Imager is momenteel actief.$\nWilt u het programma afsluiten?"
-LangString stopMsg ${LANG_DUTCH} "Bezig met afsluiten Aliro-Ed Imager"
+LangString termMsg ${LANG_DUTCH} "Aliro Ed Imager is momenteel actief.$\nWilt u het programma afsluiten?"
+LangString stopMsg ${LANG_DUTCH} "Bezig met afsluiten Aliro Ed Imager"
 LangString win7Msg ${LANG_DUTCH} "Minimaal Windows 7 is vereist"
-LangString termMsg ${LANG_ITALIAN} "Aliro-Ed Imager sembra essere in esecuzione e occupato.$\nVuoi terminare il processo Aliro-Ed Imager?"
-LangString stopMsg ${LANG_ITALIAN} "Chiusura processo Aliro-Ed Imager"
+LangString termMsg ${LANG_ITALIAN} "Aliro Ed Imager sembra essere in esecuzione e occupato.$\nVuoi terminare il processo Aliro Ed Imager?"
+LangString stopMsg ${LANG_ITALIAN} "Chiusura processo Aliro Ed Imager"
 LangString win7Msg ${LANG_ITALIAN} "Per l'esecuzione del programma è richiesto Windows 7 o versioni successive"
 
 ######################################################################
@@ -642,11 +642,11 @@ CreateShortCut "$SMPROGRAMS\$SM_Folder\${APP_NAME} Website.lnk" "$INSTDIR\${APP_
 !endif
 
 !ifndef REG_START_MENU
-CreateDirectory "$SMPROGRAMS\Aliro-Ed"
-CreateShortCut "$SMPROGRAMS\Aliro-Ed\${APP_NAME}.lnk" "$INSTDIR\${MAIN_APP_EXE}"
+CreateDirectory "$SMPROGRAMS\Aliro Ed"
+CreateShortCut "$SMPROGRAMS\Aliro Ed\${APP_NAME}.lnk" "$INSTDIR\${MAIN_APP_EXE}"
 !ifdef WEB_SITE
 WriteIniStr "$INSTDIR\${APP_NAME} website.url" "InternetShortcut" "URL" "${WEB_SITE}"
-CreateShortCut "$SMPROGRAMS\Aliro-Ed\${APP_NAME} Website.lnk" "$INSTDIR\${APP_NAME} website.url"
+CreateShortCut "$SMPROGRAMS\Aliro Ed\${APP_NAME} Website.lnk" "$INSTDIR\${APP_NAME} website.url"
 !endif
 !endif
 
@@ -667,7 +667,7 @@ WriteRegStr SHCTX "Software\Classes\.gz\OpenWithProgIds" "RPI_IMAGINGUTILITY" ""
 WriteRegStr SHCTX "Software\Classes\.xz\OpenWithProgIds" "RPI_IMAGINGUTILITY" ""
 WriteRegStr SHCTX "Software\Classes\.img\OpenWithProgIds" "RPI_IMAGINGUTILITY" ""
 WriteRegStr SHCTX "Software\Classes\.zstd\OpenWithProgIds" "RPI_IMAGINGUTILITY" ""
-WriteRegStr SHCTX "Software\Classes\RPI_IMAGINGUTILITY\shell\open" "FriendlyAppName" "Aliro-Ed Imager"
+WriteRegStr SHCTX "Software\Classes\RPI_IMAGINGUTILITY\shell\open" "FriendlyAppName" "Aliro Ed Imager"
 WriteRegStr SHCTX "Software\Classes\RPI_IMAGINGUTILITY\shell\open\command" "" '"$INSTDIR\aliro-imager.exe" "%1"'
 
 SectionEnd
@@ -1099,11 +1099,11 @@ RmDir "$SMPROGRAMS\$SM_Folder"
 !endif
 
 !ifndef REG_START_MENU
-Delete "$SMPROGRAMS\Aliro-Ed\${APP_NAME}.lnk"
+Delete "$SMPROGRAMS\Aliro Ed\${APP_NAME}.lnk"
 !ifdef WEB_SITE
-Delete "$SMPROGRAMS\Aliro-Ed\${APP_NAME} Website.lnk"
+Delete "$SMPROGRAMS\Aliro Ed\${APP_NAME} Website.lnk"
 !endif
-RmDir "$SMPROGRAMS\Aliro-Ed"
+RmDir "$SMPROGRAMS\Aliro Ed"
 !endif
 
 DeleteRegKey ${REG_ROOT} "${REG_APP_PATH}"
@@ -1119,10 +1119,10 @@ DeleteRegKey SHCTX "Software\Classes\RPI_IMAGINGUTILITY"
 
 DeleteRegKey ${REG_ROOT} ""
 
-RMDir /r "$APPDATA\Aliro-Ed\Imager"
-RMDir "$APPDATA\Aliro-Ed"
-RMDir /r "$LOCALAPPDATA\Aliro-Ed\Imager"
-RMDir "$LOCALAPPDATA\Aliro-Ed"
+RMDir /r "$APPDATA\Aliro Ed\Imager"
+RMDir "$APPDATA\Aliro Ed"
+RMDir /r "$LOCALAPPDATA\Aliro Ed\Imager"
+RMDir "$LOCALAPPDATA\Aliro Ed"
 
 SectionEnd
 
