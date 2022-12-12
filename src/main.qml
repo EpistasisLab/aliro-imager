@@ -943,7 +943,7 @@ ApplicationWindow {
             progressBar.Material.accent = "#ffffff"
             osbutton.enabled = false
             dstbutton.enabled = false
-            imageWriter.setVerifyEnabled(true)
+            imageWriter.setVerifyEnabled(false)
             imageWriter.startWrite()
         }
 
