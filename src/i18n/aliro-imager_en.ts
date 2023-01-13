@@ -54,7 +54,7 @@
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="198"/>
-        <source>Please verify if &apos;Aliro Ed Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
+        <source>Please verify if &apos;AliroEd Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -486,7 +486,7 @@
     <name>main</name>
     <message>
         <location filename="../main.qml" line="24"/>
-        <source>Aliro Ed Imager v%1</source>
+        <source>AliroEd Imager v%1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -650,7 +650,7 @@
     </message>
     <message>
         <location filename="../main.qml" line="863"/>
-        <source>Aliro Ed Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
+        <source>AliroEd Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

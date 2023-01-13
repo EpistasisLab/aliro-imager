@@ -23,7 +23,7 @@ ApplicationWindow {
     maximumHeight: imageWriter.isEmbeddedMode() ? -1 : 420
     //maximumHeight: imageWriter.isEmbeddedMode() ? -1 : 420
 
-    title: qsTr("Aliro Ed Imager v%1").arg(imageWriter.constantVersion())
+    title: qsTr("AliroEd Imager v%1").arg(imageWriter.constantVersion())
 
     FontLoader {id: roboto;      source: "fonts/Roboto-Regular.ttf"}
     FontLoader {id: robotoLight; source: "fonts/Roboto-Light.ttf"}
@@ -917,7 +917,7 @@ ApplicationWindow {
         yesButton: true
         noButton: true
         title: qsTr("Are you sure you want to quit?")
-        text: qsTr("Aliro Ed Imager is still busy.<br>Are you sure you want to quit?")
+        text: qsTr("AliroEd Imager is still busy.<br>Are you sure you want to quit?")
         onYes: {
             Qt.quit()
         }

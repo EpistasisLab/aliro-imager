@@ -54,8 +54,8 @@
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="198"/>
-        <source>Please verify if &apos;Aliro Ed Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
-        <translation>Verifiqueu si el «Aliro Ed Imager» té accés als «volums extraïbles» des de la configuració de privacitat (sota «fitxers i carpetes» o doneu-li «accés complet al disc»)</translation>
+        <source>Please verify if &apos;AliroEd Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
+        <translation>Verifiqueu si el «AliroEd Imager» té accés als «volums extraïbles» des de la configuració de privacitat (sota «fitxers i carpetes» o doneu-li «accés complet al disc»)</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="220"/>
@@ -502,8 +502,8 @@
     <name>main</name>
     <message>
         <location filename="../main.qml" line="24"/>
-        <source>Aliro Ed Imager v%1</source>
-        <translation>Aliro Ed Imager v%1</translation>
+        <source>AliroEd Imager v%1</source>
+        <translation>AliroEd Imager v%1</translation>
     </message>
     <message>
         <location filename="../main.qml" line="99"/>
@@ -666,8 +666,8 @@
     </message>
     <message>
         <location filename="../main.qml" line="863"/>
-        <source>Aliro Ed Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
-        <translation>El Aliro Ed Imager està ocupat.&lt;br&gt;N&apos;esteu segur que voleu sortir?</translation>
+        <source>AliroEd Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
+        <translation>El AliroEd Imager està ocupat.&lt;br&gt;N&apos;esteu segur que voleu sortir?</translation>
     </message>
     <message>
         <location filename="../main.qml" line="874"/>

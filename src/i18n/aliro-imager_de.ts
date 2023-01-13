@@ -59,10 +59,10 @@
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="198"/>
-        <source>Please verify if &apos;Aliro Ed Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
+        <source>Please verify if &apos;AliroEd Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
         <translatorcomment>I don&apos;t use Mac OS, I would need help here. Unfinished translation:
 
-Bitte stellen Sie sicher, dass &apos;Aliro Ed Imager&apos; Zugriff auf &apos;removable volumes&apos; in privacy settings hat (unter &apos;files and folders&apos;. Sie können ihm auch &apos;full disk access&apos; geben).</translatorcomment>
+Bitte stellen Sie sicher, dass &apos;AliroEd Imager&apos; Zugriff auf &apos;removable volumes&apos; in privacy settings hat (unter &apos;files and folders&apos;. Sie können ihm auch &apos;full disk access&apos; geben).</translatorcomment>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -504,8 +504,8 @@ Controlled Folder Access scheint aktiviert zu sein. Bitte fügen Sie sowohl alir
     <name>main</name>
     <message>
         <location filename="../main.qml" line="24"/>
-        <source>Aliro Ed Imager v%1</source>
-        <translation>Aliro Ed Imager v%1</translation>
+        <source>AliroEd Imager v%1</source>
+        <translation>AliroEd Imager v%1</translation>
     </message>
     <message>
         <location filename="../main.qml" line="99"/>
@@ -672,8 +672,8 @@ Controlled Folder Access scheint aktiviert zu sein. Bitte fügen Sie sowohl alir
     </message>
     <message>
         <location filename="../main.qml" line="863"/>
-        <source>Aliro Ed Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
-        <translation>Der Aliro Ed Imager ist noch beschäftigt. &lt;br&gt;Möchten Sie wirklich beenden?</translation>
+        <source>AliroEd Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
+        <translation>Der AliroEd Imager ist noch beschäftigt. &lt;br&gt;Möchten Sie wirklich beenden?</translation>
     </message>
     <message>
         <location filename="../main.qml" line="874"/>

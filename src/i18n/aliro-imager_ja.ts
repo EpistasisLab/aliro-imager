@@ -54,8 +54,8 @@
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="198"/>
-        <source>Please verify if &apos;Aliro Ed Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
-        <translation type="unfinished">Aliro Ed Imagerがリムーバブルボリュームへアクセスすることがプライバシー設定(「ファイルとフォルダー」の中、またはディスクへのすべてのアクセス権限を付与する)で許可されているかを確認してください。</translation>
+        <source>Please verify if &apos;AliroEd Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
+        <translation type="unfinished">AliroEd Imagerがリムーバブルボリュームへアクセスすることがプライバシー設定(「ファイルとフォルダー」の中、またはディスクへのすべてのアクセス権限を付与する)で許可されているかを確認してください。</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="220"/>
@@ -494,8 +494,8 @@
     <name>main</name>
     <message>
         <location filename="../main.qml" line="24"/>
-        <source>Aliro Ed Imager v%1</source>
-        <translation>Aliro Ed Imager v%1</translation>
+        <source>AliroEd Imager v%1</source>
+        <translation>AliroEd Imager v%1</translation>
     </message>
     <message>
         <location filename="../main.qml" line="99"/>
@@ -658,8 +658,8 @@
     </message>
     <message>
         <location filename="../main.qml" line="863"/>
-        <source>Aliro Ed Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
-        <translation>Aliro Ed Imagerは現在まだ処理中です。&lt;bt&gt;本当にやめますか？</translation>
+        <source>AliroEd Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
+        <translation>AliroEd Imagerは現在まだ処理中です。&lt;bt&gt;本当にやめますか？</translation>
     </message>
     <message>
         <location filename="../main.qml" line="874"/>

@@ -54,8 +54,8 @@
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="198"/>
-        <source>Please verify if &apos;Aliro Ed Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
-        <translation>Gelieve te controlleren of &apos;Aliro Ed Imager&apos; toegang heeft tot &apos;verwijderbare volumes&apos; in de privacy instellingen (onder &apos;bestanden en mappen&apos; of anders via &apos;volledige schijftoegang&apos;).</translation>
+        <source>Please verify if &apos;AliroEd Imager&apos; is allowed access to &apos;removable volumes&apos; in privacy settings (under &apos;files and folders&apos; or alternatively give it &apos;full disk access&apos;).</source>
+        <translation>Gelieve te controlleren of &apos;AliroEd Imager&apos; toegang heeft tot &apos;verwijderbare volumes&apos; in de privacy instellingen (onder &apos;bestanden en mappen&apos; of anders via &apos;volledige schijftoegang&apos;).</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="220"/>
@@ -502,8 +502,8 @@
     <name>main</name>
     <message>
         <location filename="../main.qml" line="24"/>
-        <source>Aliro Ed Imager v%1</source>
-        <translation>Aliro Ed Imager v%1</translation>
+        <source>AliroEd Imager v%1</source>
+        <translation>AliroEd Imager v%1</translation>
     </message>
     <message>
         <location filename="../main.qml" line="862"/>
@@ -512,8 +512,8 @@
     </message>
     <message>
         <location filename="../main.qml" line="863"/>
-        <source>Aliro Ed Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
-        <translation>Aliro Ed Imager is nog niet klaar.&lt;br&gt;Weet u zeker dat u wilt afsluiten?</translation>
+        <source>AliroEd Imager is still busy.&lt;br&gt;Are you sure you want to quit?</source>
+        <translation>AliroEd Imager is nog niet klaar.&lt;br&gt;Weet u zeker dat u wilt afsluiten?</translation>
     </message>
     <message>
         <location filename="../main.qml" line="99"/>

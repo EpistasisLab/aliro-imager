@@ -18,4 +18,4 @@ config BR2_PACKAGE_RPI_IMAGER
         select BR2_PACKAGE_QT5TOOLS_LINGUIST_TOOLS
         
         help
-          Aliro Ed Imager
+          AliroEd Imager
